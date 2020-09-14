@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <title>Artistry by Kurt Wenner</title>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to an Awesome artist</h1>
+    </header>
+    <div id="wrapper">
+        <picture>
+            <source media="(min-width:768px)" srcset="madonna.jpg">
+            <source media="(min-width:500px)" srcset="madonna.jpg"> <img src="madonna.jpg" alt="painting of madonna"
+                style="width:auto;"> </picture>
+        <picture>
+            <source media="(min-width:768px)" srcset="pokerdog.jpg">
+            <source media="(min-width:500px)" srcset="pokerdog.jpg"> <img src="pokerdog.jpg" alt="painting of dog"
+                style="width:auto;"></picture>
+        <picture>
+            <source media="(min-width:768px)" srcset="blonde.jpg">
+            <source media="(min-width:500px)" srcset="blonde.jpg"> <img src="blonde.jpg" alt="painting of blonde"
+                style="width:auto;"></picture>
+        <picture>
+            <source media="(min-width:768px)" srcset="battle.jpg">
+            <source media="(min-width:500px)" srcset="battle.jpg"> <img src="battle.jpg" alt="painting of battle"
+                style="width:auto;"></picture>
+        <picture>
+            <source media="(min-width:768px)" srcset="town.jpg">
+            <source media="(min-width:500px)" srcset="town.jpg"> <img src="town.jpg" alt="painting of town"
+                style="width:auto;"></picture>
+        <picture>
+            <source media="(min-width:768px)" srcset="serpent.jpg">
+            <source media="(min-width:500px)" srcset="serpent.jpg"> <img src="serpent.jpg" alt="painting of serpent"
+                style="width:auto;"></picture>
+        <picture>
+            <source media="(min-width:768px)" srcset="ganesh.jpg">
+            <source media="(min-width:500px)" srcset="ganesh.jpg"> <img src="ganesh.jpg" alt="painting of ganesh"
+                style="width:auto;"> </picture>
+        <picture>
+            <source media="(min-width:768px)" srcset="3dtube.jpg">
+            <source media="(min-width:500px)" srcset="3dtube.jpg"> <img src="3dtube.jpg"
+                alt="3d painting of london tube" style="width:auto;"> </picture>
+        <picture>
+            <source media="(min-width:768px)" srcset="3dancient.jpg">
+            <source media="(min-width:500px)" srcset="3dancient.jpg"> <img src="3dancient.jpg"
+                alt="3d painting of ancient times" style="width:auto;"> </picture>
+
+
+
+        <p class="learn">When I was learning how to work with pastels on the pavement, I started by copying well-known
+            paintings. Once I got the hang of it, I began to create my own compositions. The public thought they were
+            lesser-known paintings by famous artists and did not realize they were my invention. I felt challenged to
+            figure out how to get the public to see my pictures were original.
+
+            I had noticed a slight 3D effect in photos of my work. I had not intended it and found it unusual. I
+            realized that if my compositions were three-dimensional, it would be impossible to confuse them with
+            masterpieces from the past. Once I figured out the geometry, I got started making three-dimensional images.
+            They were so utterly different than anything ever seen before that many passers-by stopped and began talking
+            with me about my work.</p>
+
+    </div>
+
+    <div class="hide">
+        <img id="hid" src="3dbuick.jpg">
+    </div>
+    <div class="surp"> <button id="surprise">Surprise here!</button></div>
+
+
+
+    <div class="contact">
+        <img class="art" src="artist.jpg" alt="picture of artist">
+        <div class="info">
+            <h2>Bio:</h2>
+            <p>My artwork almost always tells a story. I enjoy using themes and stories that withstand the test of time
+                as they spark recognition across generations. I often use stories from sacred art, mythology, and music.
+            </p>
+            <h3>Contact</h3>
+
+            <form method="get" action=""> <br>
+                <label for="myName">*Name:</label>
+                <input type="text" name="myName" id="myName" required="required"><br>
+                <label for="myEmail">*Email:</label>
+                <input name="myEmail" id="myEmail" type="email" required="required"><br>
+                <label for="mySubject">*Subject:</label>
+                <input type="text" name="mySubject" id="mySubject" required="required"><br>
+                <label for="myMessage">*Message:</label><br>
+                <textarea name="myMessage" id="myMessage" rows="1" cols="30" required="required"></textarea><br>
+                <input id="mySubmit" type="submit" value="Submit">
+            </form>
+
+
+        </div>
+    </div>
+    <script>
+        $('#surprise').click(function () {
+            $('#hid').show();
+
+        });
+    </script>
+</body>
+
+</html>
