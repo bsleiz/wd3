@@ -1,0 +1,17 @@
+body {
+    padding-bottom:70px;
+}    
+
+section.jumbotron {
+    background-size:cover;
+    background-position:center;
+}
+    
+.text-white {
+    color: #ededed !important;
+}
+    
+.bg-transparent {
+    background-color: rgb(20,20,20,.3) !important;
+}
+    
