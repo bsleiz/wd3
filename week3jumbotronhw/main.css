@@ -1,5 +1,5 @@
 body {
-    padding-bottom:70px;
+    padding-bottom:120px;
 }    
 
 section.jumbotron {
@@ -7,11 +7,20 @@ section.jumbotron {
     background-position:center;
 }
     
-.text-white {
-    color: #ededed !important;
+.text-black {
+    color: black !important;
 }
     
-.bg-transparent {
-    background-color: rgb(20,20,20,.3) !important;
+.bg-white {
+    background-color: white !important;
+    
 }
     
+.container h2 {
+    text-align:center;
+    font-size:1.2em;
+}
+
+.nav-item {
+    margin:2px;
+}
