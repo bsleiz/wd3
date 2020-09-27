@@ -1,0 +1,38 @@
+body {
+    padding-bottom:120px;
+}    
+
+section.jumbotron {
+    background-size:cover;
+    background-position:center;
+}
+    
+.text-black {
+    color: black !important;
+}
+    
+.bg-white {
+    background-color: white !important;
+    
+}
+    
+.card{
+    padding:0;
+margin:1rem;
+
+}
+
+.row-cols-md-2>*{
+    flex:0 0 46%;
+
+}
+
+nav ul { font-size: 30px;
+list-style: none;
+padding: 0px;
+color:black;
+}
+
+nav ul li { display:inline-block;
+}
+    
