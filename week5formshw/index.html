@@ -139,47 +139,54 @@
                   <label for="exampleInputPassword1">Password</label>
                   <input type="password" class="form-control" id="exampleInputPassword1">
                 </div>
-                <div class="form-group form-check">
-                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                  <label class="form-check-label" for="exampleCheck1">Click here if different billing address</label>
-                </div>
-                </fieldset>
+
+              </fieldset>
               </form>
+                <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1" onchange="getonit()">
+                  <label class="form-check-label" for="exampleCheck1">Click here if different billing address</label></div>
+                <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck2" onchange="getonit()">
+                  <label class="form-check-label" for="exampleCheck2">Click here if same billing address</label>
+</div>
+                
+             
               <form>
-                 <fielset>
+                 <fieldset>
                    <div class="form-group1">
                   <div class="form-group">
-                    <label for="inputAddress">Address</label>
-                    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                    <label for="secondaryaddress">Address</label>
+                    <input type="text" class="form-control" id="secondaryaddress" placeholder="1234 Main St">
                   </div>
                   <div class="form-group">
-                    <label for="inputAddress2">Address 2</label>
-                    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                    <label for="secondaryaddress2">Address 2</label>
+                    <input type="text" class="form-control" id="secondaryaddress2" placeholder="Apartment, studio, or floor">
                   </div>
                   <div class="form-row">
                     <div class="form-group col-md-6">
-                      <label for="inputCity">City</label>
-                      <input type="text" class="form-control" id="inputCity">
+                      <label for="inputCity2">City</label>
+                      <input type="text" class="form-control" id="inputCity2">
                     </div>
                     <div class="form-group col-md-4">
-                      <label for="inputState">State</label>
-                      <select id="inputState" class="form-control">
+                      <label for="inputState2">State</label>
+                      <select id="inputState2" class="form-control">
                         <option selected>Choose...</option>
                         <option>...</option>
                       </select>
                     </div>
                     <div class="form-group col-md-2">
-                      <label for="inputZip">Zip</label>
-                      <input type="text" class="form-control" id="inputZip">
+                      <label for="inputZip2">Zip</label>
+                      <input type="text" class="form-control" id="inputZip2">
                     </div>
                   </div>
               
                 </div>
-                </fielset>
+                </fieldset>
+</form>  <fieldset>
                 <button type="submit" class="btn btn-primary">Submit</button>
             </div>
        </fieldset>
-          </form>
+         
 
     </div>
 </div>
@@ -200,9 +207,31 @@
 $('#surprise').click(function(){
   $('#hid').show();
 })
-$('#exampleCheck1').click(function(){
-  $('.form-group1').show();
-})
+
+
+
+
+function getonit(){
+  if (document.getElementById('#exampleCheck2').checked) 
+  { 
+    document.getElementById('secondaryaddress').value=document.getElementById('inputAddress').value; 
+    document.getElementById('secondaryaddress2').value=document.getElementById('inputAddress2').value; 
+    document.getElementById('inputZip2').value=document.getElementById('inputZip').value; 
+    document.getElementById('inputCity2').value=document.getElementById('inputCity').value; 
+   document.getElementById('inputState2').value=document.getElementById('inputState').value; 
+  } 
+   else if 
+  (document.getElementById('#exampleCheck1').checked) 
+  { 
+    document.getElementById('secondaryaddress').value=""; 
+    document.getElementById('secondaryaddress2').value="";
+    document.getElementById('inputZip2').value="";
+    document.getElementById('inputCity2').value="";
+   document.getElementById('inputState2').value="";
+  } 
+   }
+
+
 
 let form= document.getElementById('myForm');
 form.addEventListener("submit", function(evt){
