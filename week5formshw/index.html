@@ -80,76 +80,99 @@
 
 
 <div class="hideit"> <button id="surprise">CHECK ME OUT!</button></div>
-
-
-<div class="container" id= "hid">
+<div class="container" id="hid">
 <div class="row">
-    <div class="col">
+    <div class="col-50">
         <form method="post" action="" enctype="multipart/form-data" novalidate class="needs-validation" id="myForm">
-            <fieldset>
-              <div class="form-group">
+           <h3>Payment information</h3>
+          <fieldset>
+              <div class="form-group col-50">
                 <label for="Firstname">First Name</label>
-                <input type="name" class="form-control" id="Firstname" aria-describedby="nameHelp">
+                <input type="name" class="form-control-sm" id="Firstname" aria-describedby="nameHelp">
                 <div class="valid-feeback">Cool Name</div>
-
-                <div class="form-group">
+                
+                <div class="form-group col-50">
                   <label for="Lastname">Last Name</label>
-                  <input type="name" class="form-control" id="Lastname" aria-describedby="nameHelp">
+                  <input type="name" class="form-control-sm" id="Lastname" aria-describedby="nameHelp">
                   <div class="valid-feeback">Cool Name</div>
   
-                 
-                  
-                    
-                    <div class="form-group">
+                 <div class="form-group col-50">
                       <label for="inputAddress">Address</label>
-                      <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                      <input type="text" class="form-control-sm" id="inputAddress" placeholder="1234 Main St">
                     </div>
-                    <div class="form-group">
+                 <div class="form-group col-50">
                       <label for="inputAddress2">Address 2</label>
-                      <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                      <input type="text" class="form-control-sm" id="inputAddress2" placeholder="Apartment, studio, or floor">
                     </div>
-                    <div class="form-row">
-                      <div class="form-group col-md-6">
+                <div class="form-row">
+                      <div class="form-group col-50">
                         <label for="inputCity">City</label>
-                        <input type="text" class="form-control" id="inputCity">
+                        <input type="text" class="form-control-sm" id="inputCity">
                       </div>
-                      <div class="form-group col-md-4">
+                    
+                     
+                      <div class="form-group col-25">
                         <label for="inputState">State</label>
-                        <select id="inputState" class="form-control">
+                        <select id="inputState" class="form-control-sm">
                           <option selected>Choose...</option>
                           <option>...</option>
                         </select>
                       </div>
-                      <div class="form-group col-md-2">
+                      <div class="form-group col-50">
                         <label for="inputZip">Zip</label>
                         <input type="text" class="form-control" id="inputZip">
                       </div>
                     </div>
-                  
-                
-                
-
-                <div class="form-group">
+                  <div class="form-group col-50">
                   <label for="exampleInputEmail1">Email address</label>
                   <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                   <div class="valid-feeback">Good job</div>
                   <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                 <div class="invalid-feeback">you need to fill this field</div>
-                <div class="form-group">
+                <div class="form-group col-50">
                   <label for="exampleInputPassword1">Password</label>
                   <input type="password" class="form-control" id="exampleInputPassword1">
                 </div>
 
-              </fieldset>
-              </form>
-                <div class="form-group form-check">
+           
+              
+                <div class="form-group form-check col-25">
                   <input type="checkbox" class="form-check-input" id="exampleCheck1" name="exampleCheck1" onchange="Fillerup()">
                   <label class="form-check-label" for="exampleCheck1">Click here if same billing address</label></div>
-                
-                
-             
-              <form>
+                </div>
+                </div>
+                </fieldset>
+                  <div class="col-50">
+                    <h3>Payment</h3>
+                    <label for="fname">Accepted Cards</label>
+                    <div class="icon-container">
+                      <i class="fa fa-cc-visa" style="color:navy;"></i>
+                      <i class="fa fa-cc-amex" style="color:blue;"></i>
+                      <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                      <i class="fa fa-cc-discover" style="color:orange;"></i>
+                    </div>
+                    <label for="cname">Name on Card</label>
+                    <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+                    <label for="ccnum">Credit card number</label>
+                    <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                    <label for="expmonth">Exp Month</label>
+                    <input type="text" id="expmonth" name="expmonth" placeholder="September">
+        
+                    <div class="row">
+                      <div class="col-50">
+                        <label for="expyear">Exp Year</label>
+                        <input type="text" id="expyear" name="expyear" placeholder="2018">
+                      </div>
+                      <div class="col-50">
+                        <label for="cvv">CVV</label>
+                        <input type="text" id="cvv" name="cvv" placeholder="352">
+                      </div>
+                    </div>
+                  </div>
+              
                  <fieldset>
+                   <div class= "row">
+                     <div class= "col-50">                   </div>
                   <div class="form-group">
                     <label for="secondaryaddress">Address</label>
                     <input type="text" class="form-control" id="secondaryaddress" placeholder="1234 Main St">
@@ -159,30 +182,30 @@
                     <input type="text" class="form-control" id="secondaryaddress2" placeholder="Apartment, studio, or floor">
                   </div>
                   <div class="form-row">
-                    <div class="form-group col-md-6">
+                    <div class="form-group col-50">
                       <label for="inputCity2">City</label>
                       <input type="text" class="form-control" id="inputCity2">
                     </div>
-                    <div class="form-group col-md-4">
+                    <div class="form-group col-50">
                       <label for="inputState2">State</label>
                       <select id="inputState2" class="form-control">
                         <option selected>Choose...</option>
                         <option>...</option>
                       </select>
                     </div>
-                    <div class="form-group col-md-2">
+                    <div class="form-group col-50">
                       <label for="inputZip2">Zip</label>
                       <input type="text" class="form-control" id="inputZip2">
                     </div>
                   </div>
               
                 </div>
-                </fieldset>
-</form>  <div><fieldset>
+                </fieldset>  <div><fieldset>
                 <button type="submit" class="btn btn-primary">Submit</button>
-            </div>
+          
        </fieldset>
-         
+         </div>
+        </form>
 
     </div>
 </div>
