@@ -143,7 +143,7 @@
               </fieldset>
               </form>
                 <div class="form-group form-check">
-                  <input type="checkbox" class="form-check-input" id="exampleCheck1" name="exampleCheck1" onchange="getonit()"/>
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1" name="exampleCheck1" onchange="Fillerup()">
                   <label class="form-check-label" for="exampleCheck1">Click here if same billing address</label></div>
                 
                 
@@ -206,9 +206,9 @@ $('#surprise').click(function(){
 
 
 
-function getonit(){
+function Fillerup(){
   
-  if (document.getElementById('#exampleCheck1').checked) 
+  if (document.getElementById('exampleCheck1').checked) 
   { 
     document.getElementById('secondaryaddress').value=document.getElementById('inputAddress').value; 
     document.getElementById('secondaryaddress2').value=document.getElementById('inputAddress2').value; 
