@@ -1,24 +1,28 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-<link rel="stylesheet" href="main.css">
-    <title>Hello, world!</title>
-  </head>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="main.css">
+  <title>Hello, world!</title>
+</head>
 
 
-  <body>
-    <header><nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-warning">
-      <a class="navbar-brand" href="#"><img src="pokerdog.jpg" height="80" width="80" class="rounded-circle"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<body>
+  <header>
+    <nav class="navbar navbar-expand-sm navbar-light bg-primary">
+      <a class="navbar-brand" href="#"><img src="3dancient.jpg" height="80" width="80" class="rounded-circle"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-    
+
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
@@ -28,42 +32,39 @@
             <a class="nav-link" href="#">Products</a>
           </li>
           <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Blog</a>
-            </li>
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blog</a>
+          </li>
           </li>
           <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Search">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
           </form>
-       
+
       </div>
-    </nav></header>
-  
-  <main> 
-     <h1>Welcome to an Awesome artist</h1>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Welcome to an Awesome artist</h1>
     <div class="container">
-        <div class=" d-flex row align-items-center">
-            <div class="col text-center">
-              <img src="3dancient.jpg"  alt="painting of ancient"  class="image-fluid">
-            </div>
-           
-            <div class="col text-center">
-              <img src="pokerdog.jpg" alt="painting of dog" class="image-fluid">
-          </div> 
-          
-          <div class="col text-center">
-            <img src="3dtube.jpg" alt="painting of tube" class="image-fluid">
-          </div> 
-         
-          <div class="col text-center">
-            <img src="3dbuick.jpg" alt="painting of buick" class="image-fluid">
-          </div>
-         
-         
+      <div class=" d-flex row align-items-center">
+        <div class="col text-center">
+          <img src="pokerdog.jpg" alt="painting of dog" class="image-fluid">
         </div>
+
+        <div class="col text-center">
+          <img src="3dtube.jpg" alt="painting of tube" class="image-fluid">
+        </div>
+
+        <div class="col text-center">
+          <img src="3dbuick.jpg" alt="painting of buick" class="image-fluid">
+        </div>
+
+
+      </div>
     </div>
     <p class="learn">When I was learning how to work with pastels on the pavement, I started by copying well-known
       paintings. Once I got the hang of it, I began to create my own compositions. The public thought they were
@@ -76,192 +77,242 @@
       They were so utterly different than anything ever seen before that many passers-by stopped and began talking
       with me about my work.</p>
 
+    <div class="hideit"> <button id="surprise">CHECK ME OUT!</button>
+    </div>
 
+    <div class="container" id="hid">
+      <div class="row">
+        <div class="col">
+          <form method="post" action="" enctype="multipart/form-data" novalidate class="needs-validation" id="myForm">
 
+            <h3>Payment information</h3>
 
-<div class="hideit"> <button id="surprise">CHECK ME OUT!</button></div>
-<div class="container" id="hid">
-<div class="row">
-    <div class="col-50">
-        <form method="post" action="" enctype="multipart/form-data" novalidate class="needs-validation" id="myForm">
-           <h3>Payment information</h3>
-          <fieldset>
-              <div class="form-group col-50">
-                <label for="Firstname">First Name</label>
-                <input type="name" class="form-control-sm" id="Firstname" aria-describedby="nameHelp">
-                <div class="valid-feeback">Cool Name</div>
-                
-                <div class="form-group col-50">
+            <fieldset>
+
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="Firstname">First Name</label>
+                  <input type="name" class="form-control-sm" id="Firstname" aria-describedby="nameHelp">
+                  <div class="valid-feedback">Cool Name</div>
+                </div>
+
+                <div class="form-group col-md-6">
                   <label for="Lastname">Last Name</label>
                   <input type="name" class="form-control-sm" id="Lastname" aria-describedby="nameHelp">
-                  <div class="valid-feeback">Cool Name</div>
-  
-                 <div class="form-group col-50">
-                      <label for="inputAddress">Address</label>
-                      <input type="text" class="form-control-sm" id="inputAddress" placeholder="1234 Main St">
-                    </div>
-                 <div class="form-group col-50">
-                      <label for="inputAddress2">Address 2</label>
-                      <input type="text" class="form-control-sm" id="inputAddress2" placeholder="Apartment, studio, or floor">
-                    </div>
-                <div class="form-row">
-                      <div class="form-group col-50">
-                        <label for="inputCity">City</label>
-                        <input type="text" class="form-control-sm" id="inputCity">
-                      </div>
-                    
-                     
-                      <div class="form-group col-25">
-                        <label for="inputState">State</label>
-                        <select id="inputState" class="form-control-sm">
-                          <option selected>Choose...</option>
-                          <option>...</option>
-                        </select>
-                      </div>
-                      <div class="form-group col-50">
-                        <label for="inputZip">Zip</label>
-                        <input type="text" class="form-control" id="inputZip">
-                      </div>
-                    </div>
-                  <div class="form-group col-50">
-                  <label for="exampleInputEmail1">Email address</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                  <div class="valid-feeback">Good job</div>
-                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                <div class="invalid-feeback">you need to fill this field</div>
-                <div class="form-group col-50">
-                  <label for="exampleInputPassword1">Password</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputAddress">Address</label>
+                <input type="text" class="form-control-sm" id="inputAddress" placeholder="1234 Main St">
+              </div>
+              <div class="form-group">
+                <label for="inputAddress2">Address 2</label>
+                <input type="text" class="form-control-sm" id="inputAddress2" placeholder="Apartment, studio, or floor">
+              </div>
+
+              <div class="form-row">
+                <div class="form-group col-md-4">
+                  <label for="inputCity">City</label>
+                  <input type="text" class="form-control-sm" id="inputCity">
                 </div>
 
-           
-              
-                <div class="form-group form-check col-25">
-                  <input type="checkbox" class="form-check-input" id="exampleCheck1" name="exampleCheck1" onchange="Fillerup()">
-                  <label class="form-check-label" for="exampleCheck1">Click here if same billing address</label></div>
+                <div class="form-group col-md-2">
+                  <label for="inputState">State</label>
+                  <select id="inputState" class="form-control-sm">
+                    <option selected>Choose...</option>
+                    <option>...</option>
+                  </select>
                 </div>
+
+                <div class="form-group col-md-2">
+                  <label for="inputZip">Zip</label>
+                  <input type="text" class="form-control-sm" id="inputZip">
                 </div>
-                </fieldset>
-                  <div class="col-50">
-                    <h3>Payment</h3>
-                    <label for="fname">Accepted Cards</label>
-                    <div class="icon-container">
-                      <i class="fa fa-cc-visa" style="color:navy;"></i>
-                      <i class="fa fa-cc-amex" style="color:blue;"></i>
-                      <i class="fa fa-cc-mastercard" style="color:red;"></i>
-                      <i class="fa fa-cc-discover" style="color:orange;"></i>
-                    </div>
-                    <label for="cname">Name on Card</label>
-                    <input type="text" id="cname" name="cardname" placeholder="John More Doe">
-                    <label for="ccnum">Credit card number</label>
-                    <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
-                    <label for="expmonth">Exp Month</label>
-                    <input type="text" id="expmonth" name="expmonth" placeholder="September">
-        
-                    <div class="row">
-                      <div class="col-50">
-                        <label for="expyear">Exp Year</label>
-                        <input type="text" id="expyear" name="expyear" placeholder="2018">
-                      </div>
-                      <div class="col-50">
-                        <label for="cvv">CVV</label>
-                        <input type="text" id="cvv" name="cvv" placeholder="352">
-                      </div>
-                    </div>
-                  </div>
-              
-                 <fieldset>
-                   <div class= "row">
-                     <div class= "col-50">                   </div>
-                  <div class="form-group">
-                    <label for="secondaryaddress">Address</label>
-                    <input type="text" class="form-control" id="secondaryaddress" placeholder="1234 Main St">
-                  </div>
-                  <div class="form-group">
-                    <label for="secondaryaddress2">Address 2</label>
-                    <input type="text" class="form-control" id="secondaryaddress2" placeholder="Apartment, studio, or floor">
-                  </div>
-                  <div class="form-row">
-                    <div class="form-group col-50">
-                      <label for="inputCity2">City</label>
-                      <input type="text" class="form-control" id="inputCity2">
-                    </div>
-                    <div class="form-group col-50">
-                      <label for="inputState2">State</label>
-                      <select id="inputState2" class="form-control">
-                        <option selected>Choose...</option>
-                        <option>...</option>
-                      </select>
-                    </div>
-                    <div class="form-group col-50">
-                      <label for="inputZip2">Zip</label>
-                      <input type="text" class="form-control" id="inputZip2">
-                    </div>
-                  </div>
-              
+              </div>
+
+              <div class="input-group input-group-sm mb-3">
+                <label for="exampleInputEmail1">Email address</label>
+
+                <input type="email" class="form-control-sm" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div class="input-group-append">
+                  <span class="input-group-text" id="basic-addon2">@3dart.com</span>
                 </div>
-                </fieldset>  <div><fieldset>
-                <button type="submit" class="btn btn-primary">Submit</button>
-          
-       </fieldset>
-         </div>
-        </form>
+                <div class="valid-feedback">Good job</div>
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                  else.</small>
+                <div class="invalid-feedback">Please fill this field</div>
+
+              </div>
+
+
+
+
+
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control-sm" id="exampleInputPassword1">
+              </div>
+
+              <div class="form-group">
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1" name="exampleCheck1"
+                    onchange="Fillerup()">
+                  <label class="form-check-label" for="exampleCheck1">Click here if same billing address</label>
+                </div>
+
+              </div>
+        </div>
+        </fieldset>
+      </div>
+
+      <fieldset>
+        <div class="col">
+          <div class="form-group">
+            <label for="Firstname2">First Name2</label>
+            <input type="name" class="form-control-sm" id="Firstname2" aria-describedby="nameHelp">
+            <div class="valid-feedback">Cool Name</div>
+
+            <div class="form-group">
+              <label for="Lastname2">Last Name2</label>
+              <input type="name" class="form-control-sm" id="Lastname2" aria-describedby="nameHelp">
+              <div class="valid-feedback">Cool Name</div>
+
+
+              <div class="form-group">
+                <label for="secondaryaddress">Address</label>
+                <input type="text" class="form-control-sm" id="secondaryaddress" placeholder="1234 Main St">
+              </div>
+              <div class="form-group">
+                <label for="secondaryaddress2">Address 2</label>
+                <input type="text" class="form-control-sm" id="secondaryaddress2"
+                  placeholder="Apartment, studio, or floor">
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="inputCity2">City</label>
+                  <input type="text" class="form-control-sm" id="inputCity2">
+                </div>
+                <div class="form-group">
+                  <label for="inputState2">State</label>
+                  <select id="inputState2" class="form-control-sm">
+                    <option selected>Choose...</option>
+                    <option>...</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="inputZip2">Zip</label>
+                  <input type="text" class="form-control-sm" id="inputZip2">
+                </div>
+              </div>
+
+            </div>
+      </fieldset>
+
+      <fieldset>
+
+        <div class="form-group">
+          <h3>Payment</h3>
+          <label for="fname">Accepted Cards</label>
+          <div class="icon-container">
+            <i class="fa fa-cc-visa" style="color:navy;"></i>
+            <i class="fa fa-cc-amex" style="color:blue;"></i>
+            <i class="fa fa-cc-mastercard" style="color:red;"></i>
+            <i class="fa fa-cc-discover" style="color:orange;"></i>
+          </div>
+
+          <label for="cname">Name on Card</label>
+          <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+          <label for="ccnum">Credit card number</label>
+          <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+          <label for="expmonth">Exp Month</label>
+          <input type="text" id="expmonth" name="expmonth" placeholder="September">
+
+          <div class="row">
+            <div class="col">
+              <label for="expyear">Exp Year</label>
+              <input type="text" id="expyear" name="expyear" placeholder="2018">
+            </div>
+            <div class="col">
+              <label for="cvv">CVV</label>
+              <input type="text" id="cvv" name="cvv" placeholder="352">
+            </div>
+          </div>
+        </div>
+
 
     </div>
-</div>
-</div>
-</main>
 
-<footer>
+    <div class="submitit">
+      <fieldset>
+        <button type="submit" class="btn btn-primary">Submit</button>
 
-</footer>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      </fieldset>
+    </div>
+    </form>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-<script>
+    </div>
+    </div>
 
-$('#surprise').click(function(){
-  $('#hid').show();
-})
+  </main>
 
+  <footer>
 
+  </footer>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
-function Fillerup(){
-  
-  if (document.getElementById('exampleCheck1').checked) 
-  { 
-    document.getElementById('secondaryaddress').value=document.getElementById('inputAddress').value; 
-    document.getElementById('secondaryaddress2').value=document.getElementById('inputAddress2').value; 
-    document.getElementById('inputZip2').value=document.getElementById('inputZip').value; 
-    document.getElementById('inputCity2').value=document.getElementById('inputCity').value; 
-   document.getElementById('inputState2').value=document.getElementById('inputState').value; 
-  } 
-   else 
-
-  { 
-    document.getElementById('secondaryaddress').value=""; 
-    document.getElementById('secondaryaddress2').value="";
-    document.getElementById('inputZip2').value="";
-    document.getElementById('inputCity2').value="";
-   document.getElementById('inputState2').value="";
-  } 
-   }
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+  </script>
+  <script src="https://kit.fontawesome.com/1af4703ecf.js" crossorigin="anonymous"></script>
+  <script>
+    $('#surprise').click(function () {
+      $('#hid').show();
+    })
 
 
 
-let form= document.getElementById('myForm');
-form.addEventListener("submit", function(evt){
-    if(form.checkValidity()===false){
-evt.preventDefault();
-evt.stopPropagation();
+    function Fillerup() {
+
+      if (document.getElementById('exampleCheck1').checked) {
+        document.getElementById('Firstname2').value = document.getElementById('Firstname').value;
+        document.getElementById('Lastname2').value = document.getElementById('Lastname').value;
+        document.getElementById('secondaryaddress').value = document.getElementById('inputAddress').value;
+        document.getElementById('secondaryaddress2').value = document.getElementById('inputAddress2').value;
+        document.getElementById('inputZip2').value = document.getElementById('inputZip').value;
+        document.getElementById('inputCity2').value = document.getElementById('inputCity').value;
+        document.getElementById('inputState2').value = document.getElementById('inputState').value;
+      } else
+
+      {
+        document.getElementById('Firstname2').value = "";
+        document.getElementById('Lastname2').value = "";
+        document.getElementById('secondaryaddress').value = "";
+        document.getElementById('secondaryaddress2').value = "";
+        document.getElementById('inputZip2').value = "";
+        document.getElementById('inputCity2').value = "";
+        document.getElementById('inputState2').value = "";
+      }
     }
-    form.classList.add('was-validated');
-})
 
 
-</script>  
+
+    let form = document.getElementById('myForm');
+    form.addEventListener("submit", function (evt) {
+      if (form.checkValidity() === false) {
+        evt.preventDefault();
+        evt.stopPropagation();
+      }
+      form.classList.add('was-validated');
+    })
+  </script>
 </body>
+
 </html>
