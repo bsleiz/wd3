@@ -1,0 +1,44 @@
+body {
+    background-color:#fff000;
+}
+.carousel{position:relative;}
+   
+.pausebutton .btn {
+    width:70px;
+    height:40px;
+}
+
+
+
+#carouselExampleCaptions .carousel-item{
+    background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center center;
+	width:100%;
+    height:50%;
+}
+
+
+@media (min-width:320px){
+    .pausebutton {position: absolute;
+        top:120%;
+        left:42%;}
+        
+    
+}
+
+@media (min-width:760px){
+    .pausebutton {position: absolute;
+        top:70%;
+        left:46%;}
+    
+}
+
+
+@media (min-width:980px){
+    .pausebutton {position: absolute;
+        top:70%;
+        left:47%;}
+    
+}
+    

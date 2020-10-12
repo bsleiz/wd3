@@ -1,10 +1,15 @@
 $('#myModal').modal('show');
+$('#joinNow').click(function(){
+    $('#myModal').modal('hide');
+    alert('Thank you for joining us.');
+
+})
 
 $(document).ready(function(){
-    $('.carousel').carousel({interval : 1500, keyboard : false});
+    $('.carousel').carousel({interval : 1400, keyboard : false});
 })
 let carouselPaused = false;
-$('.js-carousel-pause').click(function(){
+$('.btn-primary').click(function(){
     if(carouselPaused){
         $('.carousel').carousel('cycle');
         $(this).text("Pause");
