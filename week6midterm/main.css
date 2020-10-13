@@ -1,44 +1,128 @@
 body {
-    background-color:#fff000;
+    background-color: #fff000;
+    font-family: 'Ubuntu', sans-serif;
 }
-.carousel{position:relative;}
-   
+
+main {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.card-body {
+    background-color: #ca9ce1;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.card-title {
+    color: blue;
+}
+
+.col-lg-12 p {
+    margin: auto;
+}
+
+.strive {
+    font-size: 1.25rem;
+    max-width: 60%;
+}
+
+.jumbotron {
+    background-color: #f2befc;
+}
+
+.lead {
+    font-family: 'Ubuntu', sans-serif;
+    color: blue;
+    padding: .25rem;
+}
+
+.carousel {
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.alert {
+    text-align: center;
+}
+
 .pausebutton .btn {
-    width:70px;
-    height:40px;
+    width: 70px;
+    height: 40px;
+}
+
+.welcome {
+    text-align: center;
+    margin: 50px;
 }
 
 
+.aboutus {
+    margin: 0 auto;
+    width: 60%;
 
-#carouselExampleCaptions .carousel-item{
-    background-repeat:no-repeat;
-	background-size:cover;
-	background-position:center center;
-	width:100%;
-    height:50%;
+}
+
+i.fab {
+    color: rgba(17, 106, 231, 0.798);
+}
+
+.social {
+    text-align: center;
+}
+
+footer i {
+    width: 80px;
+    height: 80px;
+}
+
+.formcontact {
+    text-align: center;
 }
 
 
-@media (min-width:320px){
-    .pausebutton {position: absolute;
-        top:120%;
-        left:42%;}
-        
-    
+#carouselExampleCaptions {
+    height: 100%;
 }
 
-@media (min-width:760px){
-    .pausebutton {position: absolute;
-        top:70%;
-        left:46%;}
-    
+#carouselExampleCaptions .carousel-inner {
+    height: 100%;
+}
+
+.carousel-item {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+
 }
 
 
-@media (min-width:980px){
-    .pausebutton {position: absolute;
-        top:70%;
-        left:47%;}
-    
+@media (min-width:320px) {
+    .pausebutton {
+        position: absolute;
+        top: 105%;
+        left: 42%;
+    }
+
+
 }
-    
+
+@media (min-width:760px) {
+    .pausebutton {
+        position: absolute;
+        top: 50%;
+        left: 46%;
+    }
+
+}
+
+
+@media (min-width:980px) {
+    .pausebutton {
+        position: absolute;
+        top: 70%;
+        left: 47%;
+    }
+
+}
