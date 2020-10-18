@@ -9,12 +9,12 @@ main {
 }
 
 .card-body {
-    background-color: #ca9ce1;
+    background-color: yellow;
     font-family: 'Work Sans', sans-serif;
 }
 
 .card-title {
-    color: blue;
+    color: black;
 }
 
 .col-lg-12 p {
@@ -23,23 +23,23 @@ main {
 
 .strive {
     font-size: 1.25rem;
-    max-width: 60%;
+    max-width: 80%;
 }
 
 .jumbotron {
-    background-color: #f2befc;
+    background-image: url('avenger.jpg');
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+    height:350px;
 }
 
 .lead {
     font-family: 'Ubuntu', sans-serif;
-    color: blue;
+    color: black;
     padding: .25rem;
 }
 
-.carousel {
-    position: relative;
-    margin-bottom: 100px;
-}
 
 .alert {
     text-align: center;
@@ -75,26 +75,17 @@ footer i {
     height: 80px;
 }
 
-.formcontact {
-    text-align: center;
+
+
+.carousel-inner {
+    height:300px;
+    width:100%;
 }
-
-
-#carouselExampleCaptions {
-    height: 100%;
-}
-
-#carouselExampleCaptions .carousel-inner {
-    height: 100%;
-}
-
-.carousel-item {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 100%;
-    width: 100%;
-
+.carousel-item{
+    background-repeat:no-repeat;
+    background-size:cover;
+    height:500px;
+    
 }
 
 
@@ -103,7 +94,7 @@ footer i {
         position: absolute;
         top: 105%;
         left: 42%;
-    }
+}
 
 
 }
@@ -115,6 +106,9 @@ footer i {
         left: 46%;
     }
 
+    .carousel-inner {
+        height:400px;
+    }
 }
 
 
@@ -123,6 +117,10 @@ footer i {
         position: absolute;
         top: 70%;
         left: 47%;
+    }
+
+    .carousel-inner {
+        height:550px;
     }
 
 }
