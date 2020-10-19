@@ -13,34 +13,49 @@ main {
     font-family: 'Work Sans', sans-serif;
 }
 
+
+.card-img-top{
+    height:60vh;
+}
+
 .card-title {
     color: black;
 }
+.bybutton{
+    text-align: center;
+}
 
-.col-lg-12 p {
-    margin: auto;
+.col-12 p {
+    margin: 0 auto;
+    width: 100%;
 }
 
 .strive {
     font-size: 1.25rem;
-    max-width: 80%;
+   
 }
 
 .jumbotron {
-    background-image: url('avenger.jpg');
+    background-image: url('infinity-war-giant-poster.jpg');
     background-repeat:no-repeat;
     background-position:center;
     background-size:cover;
     height:350px;
 }
 
-.lead {
+.display-4{
+    background-color:yellow;
+}
+
+.jumbotron .lead {
     font-family: 'Ubuntu', sans-serif;
+    background-color:rgba(203, 224, 106, 0.8);
     color: black;
     padding: .25rem;
 }
-
-
+.jumbotron .display-4 {
+    background-color:rgba(203, 224, 106, 0.8);
+}
 .alert {
     text-align: center;
 }
@@ -52,13 +67,18 @@ main {
 
 .welcome {
     text-align: center;
-    margin: 50px;
+    margin-top: 30px;
+    padding-bottom:10px;
 }
+.hello {text-align: center;
+    margin-top: 80px;
+}
+
 
 
 .aboutus {
     margin: 0 auto;
-    width: 60%;
+    width: auto;
 
 }
 
@@ -76,7 +96,6 @@ footer i {
 }
 
 
-
 .carousel-inner {
     height:300px;
     width:100%;
@@ -84,16 +103,17 @@ footer i {
 .carousel-item{
     background-repeat:no-repeat;
     background-size:cover;
-    height:500px;
+    height:300px;
     
 }
 
+a {font-size:1.25rem;}
 
 @media (min-width:320px) {
     .pausebutton {
         position: absolute;
         top: 105%;
-        left: 42%;
+        left: 50%;
 }
 
 
@@ -103,14 +123,18 @@ footer i {
     .pausebutton {
         position: absolute;
         top: 50%;
-        left: 46%;
+        left: 50%;
     }
 
     .carousel-inner {
         height:400px;
     }
+    .carousel-item{
+        background-repeat:no-repeat;
+        background-size:cover;
+        height:400px;
 }
-
+}
 
 @media (min-width:980px) {
     .pausebutton {
@@ -118,9 +142,14 @@ footer i {
         top: 70%;
         left: 47%;
     }
-
+.strive{ width:60%;
+margin: 0 auto;}
     .carousel-inner {
-        height:550px;
+        height:600px;
     }
-
+    .carousel-item{
+        background-repeat:no-repeat;
+        background-size:cover;
+        height:600px;
+}
 }
