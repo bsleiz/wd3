@@ -13,7 +13,6 @@ main {
     font-family: 'Work Sans', sans-serif;
 }
 
-
 .card-img-top{
     height:60vh;
 }
@@ -56,13 +55,18 @@ main {
 .jumbotron .display-4 {
     background-color:rgba(203, 224, 106, 0.8);
 }
+
 .alert {
     text-align: center;
 }
 
 .pausebutton .btn {
-    width: 70px;
+    width: 80px;
     height: 40px;
+}
+
+.modal-content {
+    background:yellow;
 }
 
 .welcome {
@@ -70,16 +74,16 @@ main {
     margin-top: 30px;
     padding-bottom:10px;
 }
-.hello {text-align: center;
+
+.hello {
+    text-align: center;
     margin-top: 80px;
 }
 
-
-
 .aboutus {
     margin: 0 auto;
-    width: auto;
-
+    max-width: 80%;
+    margin-bottom: 40px;
 }
 
 i.fab {
@@ -88,6 +92,7 @@ i.fab {
 
 .social {
     text-align: center;
+    padding-top:50px;
 }
 
 footer i {
@@ -95,61 +100,89 @@ footer i {
     height: 80px;
 }
 
-
 .carousel-inner {
     height:300px;
     width:100%;
 }
-.carousel-item{
+
+.carousel-item {
     background-repeat:no-repeat;
     background-size:cover;
+    background-position:center;
     height:300px;
-    
 }
 
-a {font-size:1.25rem;}
+a {
+    font-size:1.25rem;
+}
 
 @media (min-width:320px) {
-    .pausebutton {
-        position: absolute;
-        top: 105%;
-        left: 50%;
+.card.bg-dark {
+    max-width:80%;
+    margin:0 auto;
 }
 
+.team {
+    max-width: 80%;
+    margin:0 auto;
+}
 
+.pausebutton {
+    position: absolute;
+    top: 105%;
+    left:39%;
+}
+.jumbotron .lead {
+    background-color:rgba(203, 224, 106, 0.7);
+    
+}
+.jumbotron .display-4 {
+    background-color:rgba(203, 224, 106, 0.7);
+}
 }
 
 @media (min-width:760px) {
-    .pausebutton {
-        position: absolute;
-        top: 50%;
-        left: 50%;
+.pausebutton {
+    position: absolute;
+    top: 105%;
+    left: 45%;
     }
-
-    .carousel-inner {
-        height:400px;
-    }
-    .carousel-item{
-        background-repeat:no-repeat;
-        background-size:cover;
-        height:400px;
+.carousel-inner {
+    height:400px;
+        
+}
+.carousel-item { 
+    height:400px;
+}
+.display-4 {
+    width:75%;
+}
+.lead {
+    width:63%;
 }
 }
 
 @media (min-width:980px) {
-    .pausebutton {
-        position: absolute;
-        top: 70%;
-        left: 47%;
-    }
-.strive{ width:60%;
-margin: 0 auto;}
-    .carousel-inner {
-        height:600px;
-    }
-    .carousel-item{
-        background-repeat:no-repeat;
-        background-size:cover;
-        height:600px;
+.pausebutton {
+    position: absolute;
+    top: 70%;
+    left: 47%;
+}
+.strive { 
+    width:60%;
+    margin: 0 auto;
+}
+    
+.carousel-inner {
+    height:600px;
+}
+.carousel-item {
+    height:600px;
+}
+.display-4 {
+    width:68%;
+}
+.lead {
+    width:53%;
 }
 }

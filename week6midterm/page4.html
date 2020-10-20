@@ -13,11 +13,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&family=Work+Sans&display=swap" rel="stylesheet">
   <title>Poptop</title>
 </head>
-
 <body>
-
-
-  <header>
+ <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
       <a class="navbar-brand" href="#"> <img src="poptoplogo.jpg" alt="poptop logo" width="40" height="40"></li></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -47,7 +44,7 @@
 
     <div class="container">
     <div class="row">
-        <div class="col p-2">
+        <div class="col">
           <h3 class="welcome">Team</h3>
           <p class="aboutus">
             Poptop is a small business started by collectors for collectors. Here at Poptop we know how to provide our
@@ -60,69 +57,61 @@
 </div>
 </div>
 <div class="row text-center">
-  <div class="col-sm-12 col-lg-6 p-2 align-item-center">
+  <div class="col-sm-12 col-lg-6 align-item-center">
 
-<img src="teammember1.jpg" alt="picture of team member" class="img-fluid">
+<img src="teammember1.jpg" alt="picture of sally a team member" class="img-fluid team">
+<span><p>Sally - Website Manager</p></span>
 </div>
-<div class="col-sm-12 col-lg-6 p-2">
-  <img src="team3.jpg" alt="picture of team member" class="img-fluid">
+<div class="col-sm-12 col-lg-6">
+  <img src="team3.jpg" alt="picture of claudia a team member" class="img-fluid team">
+  <span><p>Claudia - Techninal Support</p></span>
   </div>
-  <div class="col-sm-12 col-lg-6 p-2">
-    <img src="team6.jpg" alt="picture of team member" class="img-fluid">
+  <div class="col-sm-12 col-lg-6">
+    <img src="team6.jpg" alt="picture of ben a team member" class="img-fluid team">
+    <span><p>Ben - Sales Manager </p></span>
 </div>
-    <div class="col-sm-12 col-lg-6  p-2">
-      <img src="team1.jpg" alt="picture of team member" class="img-fluid">
+    <div class="col-sm-12 col-lg-6">
+      <img src="team1.jpg" alt="picture of mary team member" class="img-fluid team">
+      <span><p>Mary - Software engineer</p></span>
      </div>    
       </div>
       </div>
       
-
-
-     
-
-     
-
-    
-   
-  
-  <div class="container">
-    <h3 class="welcome">Contact us</h3>
-    <form>
+<div class="container">
+  <h3 class="welcome">Contact us</h3>
+    <form class="needs-validation" novalidate id="contactform" method="post" action="" enctype="multipart/form-data">
  <div class="form-group row-6 text-center">
-        
-          <label for="inputFirst" class="col-form-label">First Name</label>
-            <div class="col text-center">
-              <input type="text" class="form-control-lg">
+  
+          <label for="inputFirst" class="col-form-label-sm">First Name</label>
+            <div class="col col-sm-8 col-md-12 col-lg-12 text-center">
+              <input type="text" class="form-control-md" required>
             </div>
             </div>
             <div class="form-group row-6 text-center">
-              <label for="inputLast" class="col-form-label">Last Name</label>
-            <div class="col text-center">
+              <label for="inputLast" class="col-form-label-sm text-center">Last Name</label>
+              <div class="col col-sm-8 col-md-12 col-lg-12 text-center">
 
-              <input type="text" class="form-control-lg">
+              <input type="text" class="form-control-md" required>
             </div>
           </div>
         
         <div class="form-group row-6 text-center">
-        
-          <label for="exampleInputEmail1" class="col-form-label">Email</label>
+        <label for="exampleInputEmail1" class="col-form-label-sm text-center">Email</label>
           
-          <div class="col text-center">
-
-          
-          <input type="email" class="form-control-lg" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div class="col col-sm-8 col-md-12 col-lg-12 text-center">
+          <input type="email" class="form-control-md" id="exampleInputEmail1" aria-describedby="emailHelp" required>
           <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
         </div>
       </div>
       <div class="form-group row-6 text-center">
       
-        <label for="exampleFormControlTextarea1" class="col-form-label">Comments</label>
-        <div class="col text-center">
-        <textarea class="form-control-lg" id="exampleFormControlTextarea1" rows="3"></textarea>
+        <label for="exampleFormControlTextarea1" class="col-form-label-sm">Comments</label>
+        <div class="col col-sm-8 col-md-12 col-lg-12 text-center">
+        <textarea class="form-control-md" id="exampleFormControlTextarea1" rows="3"></textarea>
       </div>
     </div>
     <div class="form-group row-6 text-center">
-      <div class="col text-center">
+      <div class="col col-sm-8 col-md-12 col-lg-12 text-center">
       <button type="submit" class="btn btn-primary">Submit</button>
     </div>
 
@@ -130,14 +119,14 @@
   </div>
 
   </main>
-  <footer>
-    <footer class="social">
-      <i class="fab fa-facebook-square fa-2x"></i>
-      <i class="fab fa-instagram-square fa-2x"></i>
-      <i class="fab fa-twitter fa-2x"></i>
-    </footer>
-
+  <footer class="social">
+    <span> Check us out on social!</p></span>
+    <i class="fab fa-facebook-square fa-2x"></i>
+    <i class="fab fa-instagram-square fa-2x"></i>
+    <i class="fab fa-twitter fa-2x"></i>
+    <span><p>&copy; 2020 PopTop Products, Inc.</p></span>
   </footer>
+
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

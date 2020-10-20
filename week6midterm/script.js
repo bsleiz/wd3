@@ -18,21 +18,15 @@ $('#myModal').modal('show');
 form.classList.add('was-validated');
  });
 
-
-
- 
-
-    
-
 $(document).ready(function () {
     $('.carousel').carousel({
-        interval: 2000,
+        interval: 5000,
         keyboard: false
     });
 });
 
 let carouselPaused = false;
-$('.primary').click(function () {
+$('.playbutton').click(function () {
     if (carouselPaused) {
         $('.carousel').carousel('cycle');
         $(this).text("Pause");
@@ -42,3 +36,4 @@ $('.primary').click(function () {
     }
     carouselPaused = !carouselPaused;
 });
+
