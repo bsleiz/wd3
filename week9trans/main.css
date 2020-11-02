@@ -1,0 +1,27 @@
+body {
+    background-color: green;
+    height: 80vh;
+}
+main {
+    background-color:salmon;
+}
+
+.card-body {
+    background-color: yellow;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.card-img-top{
+    height:60vh;
+}
+
+.card-title {
+    color: black;
+}
+
+.creed {
+    max-width:80px;
+    max-height:80px;
+}
+
+header {height:150px;margin-bottom:50px;}
