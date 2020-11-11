@@ -25,19 +25,19 @@
 
   <main>
     <div class="ship">
-      <img src="canship.jpg" class="canship" alt="canada ship">
+      <img src="canship.jpg" class="canship ship1" alt="canada ship">
 
-      <img src="mayship.jpg" class="mayship" alt="may ship">
+      <img src="mayship.jpg" class="mayship ship1" alt="may ship">
 
-      <img src="miraship.jpg" class="miraship" alt="mira ship"> </div>
+      <img src="miraship.jpg" class="miraship ship1" alt="mira ship"> </div>
 
     <div class="ship">
 
-      <img src="oldship.png" class="oldship" alt="old ship">
+      <img src="oldship.png" class="oldship ship1" alt="old ship">
 
-      <img src="setship.jpg" class="setship" alt="set ship">
+      <img src="setship.jpg" class="setship ship1" alt="set ship">
 
-      <img src="shipwreck.jpg" class="shipwreck" alt="shipwreck ship">
+      <img src="shipwreck.jpg" class="shipwreck ship1" alt="shipwreck ship">
    </div>
 
   </main>
@@ -48,7 +48,12 @@
     });
 
   
- 
+    $('.ship img').on('click', function (e) {
+      e.preventDefault;
+      e.stopPropagation;
+      $(this).toggleClass('selected');
+    });
+
 
   </script>
 </body>

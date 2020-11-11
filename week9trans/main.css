@@ -27,7 +27,7 @@ nav a {
     text-transform: uppercase;
     text-decoration: none;
     color: #000;
-    border-bottom: 1px solid rgb(128, 128, 128, 1);
+    border-bottom: 1px solid rgba(128, 128, 128, 0);
     transition: color 500ms, white 500ms;
     transition: border-bottom-color 600ms, white 600ms;
 
@@ -48,8 +48,9 @@ nav a:hover {
     transition: transform 1s;
     transform:translate(-8px,-8px);
 }
-.ship img:active{
+.ship img.selected{
     transform:rotate(187deg);
+    
 }   
 
 .creed.selected{
@@ -69,8 +70,7 @@ div img {
 nav a{ 
     font-size: 16px;
 }
-div img{
-    transform: rotate(.5deg);
+
 }
 }
 
@@ -86,9 +86,7 @@ div img {
 ul li {
     padding: 5px;
 }
-div img{
-    transform: rotate(3deg);
-}
+
 nav a{
      font-size: 30px;
 }
@@ -105,7 +103,6 @@ ul li {
 nav a{ 
     font-size: 30px;
 }
-div img{
-    transform: rotate(7deg);
+
 }
 }
