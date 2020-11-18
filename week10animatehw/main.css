@@ -1,0 +1,276 @@
+body {
+    margin: 0px;
+
+    animation-name: bodyColor;
+    animation-duration: 6000ms;
+    animation-fill-mode: forwards;
+
+}
+
+.ship1,
+.ship2 {
+    animation-name: opacityPic;
+    animation-duration: 9s;
+    animation-fill-mode: forwards;
+}
+
+header {
+    animation-name: headerColor;
+    animation-duration: 8000ms;
+    animation-fill-mode: forwards;
+}
+
+.creed {
+    animation-name: boxShadow;
+    animation-duration: 9000ms;
+    animation-fill-mode: forwards;
+}
+
+.navi {
+    position: absolute;
+}
+
+#navig {
+    left: -100%;
+    animation-name: moveToRight;
+    animation-duration: 6500ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes moveToRight {
+    from {
+        left: -100%;
+    }
+
+    to {
+        left: 0%;
+    }
+}
+
+@keyframes bodyColor {
+    from {
+        background-color: black;
+    }
+
+    to {
+        background-color: grey;
+    }
+}
+
+@keyframes opacityPic {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+@keyframes headerColor {
+    from {
+        background-color: black;
+    }
+
+    to {
+        background-color: grey;
+    }
+
+    to {
+        background-color: rgb(199, 199, 199);
+    }
+}
+
+@keyframes boxShadow {
+    50% {
+        box-shadow: 10px 5px black;
+    }
+}
+
+
+main {
+    max-width: 100%;
+    max-height: 100%;
+    margin-top: 40px;
+}
+
+header {
+
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+ul {
+    margin: 2px;
+    width: 100%;
+}
+
+ul li {
+    list-style: none;
+    display: inline;
+}
+
+nav a {
+    display: inline-block;
+    margin-right: 20px;
+    height: 60px;
+    line-height: 90px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000;
+    border-bottom: 1px solid rgba(128, 128, 128, 0);
+    transition: color 500ms, white 500ms;
+    transition: border-bottom-color 600ms, white 600ms;
+
+}
+
+nav a:hover {
+    color: white;
+    border-bottom-color: white;
+}
+
+.creed {
+    width: 40px;
+    height: 40px;
+    float: left;
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.ship img:hover {
+    transition: transform 1s;
+    transform: translate(-8px, -8px);
+}
+
+.ship img.selected {
+    transform: rotate(187deg);
+
+}
+
+.creed.selected {
+    transform: rotate(18deg);
+}
+
+.ship {
+    text-align: center;
+    margin: 0px;
+}
+
+@media (min-width: 320px) {
+    body {
+        margin: 0px;
+        overflow-x: hidden;
+    }
+
+    main {
+        height: 100%;
+    }
+
+    body {
+        height: auto;
+    }
+
+    header {
+        height: 100px;
+    }
+
+    div img {
+        max-width: 260px;
+        max-height: 260px;
+        margin: 5px;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+
+}
+
+
+@media (min-width:768px) {
+    body {
+        overflow: hidden;
+    }
+
+    div {
+        height: 300px;
+    }
+
+    div img {
+        max-width: 225px;
+        height: 100%;
+        margin: 10px;
+    }
+
+    ul li {
+        padding: 5px;
+    }
+
+    nav a {
+        font-size: 30px;
+    }
+
+
+    .ship {
+        width: 100vw;
+        position: absolute;
+    }
+
+    #ships1 {
+        top: -100%;
+        animation-name: moveToBottom;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+    }
+
+    #ships2 {
+        bottom: -100%;
+        animation-name: moveToTop;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+
+    }
+
+    @keyframes moveToBottom {
+        from {
+            top: -100%;
+        }
+
+        to {
+            top: 18%;
+        }
+    }
+
+    @keyframes moveToTop {
+        from {
+            bottom: -100%
+        }
+
+        to {
+            bottom: 18%
+        }
+    }
+
+}
+
+@media(min-width:980px) {
+    body {
+        overflow: hidden;
+    }
+
+    div img {
+        max-width: 300px;
+        height: 100%;
+    }
+
+    ul li {
+        padding: 5px;
+    }
+
+    nav a {
+        font-size: 30px;
+    }
+
+}

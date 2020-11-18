@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transformations and Transitions</title>
+  <link rel="stylesheet" href="main.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+  <header>
+    <nav class="navi" id="navig">
+      <img src="creed1.png" height="40" width="40" class="creed" alt="logo of the creed">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li> <a href="#">Sailing</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="ship" id="ships1">
+      <img src="canship.jpg" class="canship ship1" alt="canada ship">
+
+      <img src="mayship.jpg" class="mayship ship1" alt="may ship">
+
+      <img src="miraship.jpg" class="miraship ship1" alt="mira ship"> </div>
+
+    <div class="ship" id="ships2">
+
+      <img src="oldship.png" class="oldship ship2" alt="old ship">
+
+      <img src="setship.jpg" class="setship ship2" alt="set ship">
+
+      <img src="shipwreck.jpg" class="shipwreck ship2" alt="shipwreck ship">
+    </div>
+
+  </main>
+  <script>
+    $('.creed').on('click', function () {
+      $(this).toggleClass('selected');
+    });
+
+
+    $('.ship img').on('click', function (e) {
+      e.preventDefault;
+      e.stopPropagation;
+      $(this).toggleClass('selected');
+    });
+  </script>
+</body>
+
+</html>
