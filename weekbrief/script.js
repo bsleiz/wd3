@@ -7,3 +7,5 @@ button.addEventListener('click',function(){
     document.getElementById('itemNum').innerHTML=itemNum;
 
 });
+
+document.querySelector("#myCard").classList.toggle("flip");
