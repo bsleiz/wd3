@@ -1,8 +1,30 @@
 body {font-family: 'Great Vibes', cursive;
-    font-family: 'Raleway', sans-serif;}
+	font-family: 'Raleway', sans-serif;}
+.pic{width:250px;height:250px; display:inline-block;}
+.jumbotron {
+		background-image: url('da2cd925bffd14af304889883503c2fa95defa14.jpg');
+		background-repeat:no-repeat;
+		background-position:center;
+		background-size:cover;
+		height:350px;
+	}
+	
+	.display-4{
+		background-color:white;
+	}
+	
+	.jumbotron .lead {
+		font-family: 'Great Vibes', cursive;
+		background-color:rgba(200, 202, 191, 0.8);
+		color: black;
+		padding: .25rem;
+	}
+	.jumbotron .display-4 {
+		background-color:rgba(200, 202, 191, 0.8);
+	}
+.img-fluid{display:inline-block;}
 
-
-.btn-now{display:inline-block;}
+.btn-now{display:inline-block;text-align:center;}
 
 .flip-container {
     perspective: 1000px;
@@ -47,23 +69,26 @@ body {font-family: 'Great Vibes', cursive;
     margin:20px;
 }
 
-
+.social{
+	text-align:center;
+}
 
 @media (min-width:320px){
-div {display:block;}
+
 }
 
 @media (min-width:768px){
-
+.container{max-width:720px;}
        
 
 }
 
 
 @media(min-width:980px){
-
+.container{max-width:900px;}
 .flip-container, .front, .back, .card  {
 	
 	height: 480px;
 }
+.fields{width:600px;text-align:center;}
 }
