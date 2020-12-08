@@ -14,14 +14,14 @@
     <title>Brief</title>
   </head>
   <body>
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <header class="container-fluid nav-container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
    
-        <a class="navbar-brand"><img src="gleeclublogo.png" alt="gleemusic logo" width="60" height="60"></a>
+        <a class="navbar-brand"><img src="gleeclublogo.png" alt="gleemusic logo" width="80" height="80"></a>
         
         
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav text-center">
               <li class="nav-item active">
                   <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
@@ -43,29 +43,32 @@
                   </li>
               </ul>
                     </div>
-                     <div class="navbar-nav ml-auto px-1">
                     
-                      <a class="nav-link" href="checkout.html">
-                               <i class="fas fa-cart-plus" aria-hidden="true"></i>
-                                <span id="itemNum" class="pl-1">0</span></a>
-                                
-                      </div>
                       
           
-             <div class="navbar-nav">
-                              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            </div>
+          
+        
+        <div class="cart">
+              <div class="cart-btn p-3" > 
+          <a class="checkout" href="checkout.html">
+                   <i class="fas fa-cart-plus" aria-hidden="true"></i>
+                    <p id="itemNum" class="pl-1">0</p></a>
+                    
           </div>
+        </div>
+          <div class="navbar-nav ml-auto">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span></button>
+
+</div>
+
         </nav>
-       
       </header>
 <main>
 
  
   
- </div></div>
+ 
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
         
@@ -75,39 +78,50 @@
       </div>
       
 
-      <div class="container">
-     
-        <a class="nav-link" href="about.html"> <img src="Paulhistory bass.jpg" class="img-fluid" alt="founder picture">
+      <div class="container mt-5 mx-auto">
+        <div class="row">
+          <div class="col col-lg-10">
+      
+        <h3 class="aboutus">About Us</h3>  
+        <p>Our founder started this company in 1947 barely a fiddle to his name. Today he has passed the torch on to his family to provide top quality gear at affordable prices.</p> 
+        <a class="nav-link" href="about.html"> <img src="Paulhistory bass.jpg" class="img-fluid lespaul" alt="founder picture">
         </a>
-          <h5>About Us</h5>
-          
+                
       
       </div>
+    </div>
+  </div>
 
 <div class="container">
+ 
   <div class="row">
-    <div class="col-md-3">
-   
-
-
+    <div class="col-md-3 col-lg-10 text-centers mt-5 py-2">
+      <h3 class="products">Products</h3>
+    </div>
+  </div>
+     <div class="row">
+      <div class="col-md-3 col-lg-4 text-center py-3">
+      
+      <h4>Keyboards</h4>
         <a class="nav-link" href="products1.html"><img src="akaikeys.jpg" class="img-fluid" alt="akai keyboard">
        </a>
-          <h5>Keyboards</h5>
+          
           
        
 </div>
-          <div class="col-md-3">
-     
+          <div class="col-md-3 col-lg-4 text-center py-3">
+            <h4>Basses</h4>
             <a class="nav-link" href="products2.html"><img src="gretschbass.jpg" class="img-fluid" alt="gretsch bass">
       </a>
-          <h5 >Basses</h5>
+       
        
          </div>
-          <div class="col-md-3">
+          <div class="col-md-3 col-lg-4 text-center py-3">
+            <h4>Drums</h4>
             <a class="nav-link" href="products3.html"><img src="getrealdrums.jpg" class="img-fluid" alt="get real drums">
      
           </a>
-            <h5>Drums</h5>
+            
 
 
  
@@ -120,7 +134,7 @@
 
 </div>
 
-<div class="container">
+<div class="container mb-5 p-2">
   <a class="nav-link" href="blog.html"><h2>Blog</h2>
  </a>
     <div class="embed-responsive embed-responsive-16by9">
@@ -136,12 +150,11 @@
 
   
 </main>
-
-<footer class="social">
+<footer class="social mt-3 py-5 text-center">
   <span><p> Check us out on social!</p></span>
-  <i class="fab fa-facebook-square fa-2x"></i>
-  <i class="fab fa-instagram-square fa-2x"></i>
-  <i class="fab fa-twitter fa-2x"></i>
+  <i class="fab fa-facebook-square fa-2x facebook"></i>
+  <i class="fab fa-instagram-square fa-2x instagram"></i>
+  <i class="fab fa-twitter fa-2x twitter"></i>
   <span><p>&copy; 2020 MusicGlee Inc.</p></span>
 </footer>
 

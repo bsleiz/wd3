@@ -1,31 +1,120 @@
 body {font-family: 'Great Vibes', cursive;
 	font-family: 'Raleway', sans-serif;}
+
+
+	header {
+		
+		height:120px;padding:10px;
+		
+	}
+	nav {height:120px;}
+
+	
+
+	
+ul li {font-size:24px; margin-right:40px;}
+	
 .pic{width:250px;height:250px; display:inline-block;}
+.cart .cart-btn{ top:60px; right:75px;
+position:absolute; transform:translateY(-50%);border-radius:50px;}
+.cart .cart-btn p{color:white;background-color:blue;top:30%;position:absolute;right:6px;transform:translateY(-50%);padding:1px 5px;border-radius:50px;}
+.cart .cart-btn i{font-size:2rem;}
+.cart .cart-btn p:hover{background-color:green;}
+.cart .cart-btn i:hover{text-decoration:none; color:green;}
+.cart .cart-btn i{color:black;}
 .jumbotron {
 		background-image: url('da2cd925bffd14af304889883503c2fa95defa14.jpg');
 		background-repeat:no-repeat;
 		background-position:center;
 		background-size:cover;
-		height:350px;
+		height:370px;
 	}
+	
 	
 	.display-4{
 		background-color:white;
 	}
-	
+	p.lead {font-size: 30px;}
 	.jumbotron .lead {
 		font-family: 'Great Vibes', cursive;
 		background-color:rgba(200, 202, 191, 0.8);
 		color: black;
 		padding: .25rem;
 	}
-	.jumbotron .display-4 {
-		background-color:rgba(200, 202, 191, 0.8);
+
+	.pausebutton .btn {
+		width: 80px;
+		height: 40px;
 	}
+	.carousel-inner {
+		height:400px;
+		width:100%;
+	}
+	
+	.carousel-item {
+		background-repeat:no-repeat;
+		background-size:cover;
+		background-position:center;
+		height:400px;
+	}
+	
+
+
 .img-fluid{display:inline-block;}
 
-.btn-now{display:inline-block;text-align:center;}
+.buynow{text-align:center;padding:20px;}
 
+.productstwo{
+	position: absolute;
+	top:50%;
+	left:50%;
+}
+.productsthree{
+	position: absolute;
+	top:50%;
+	left:50%;
+}
+.productsone{
+	position: absolute;
+	top:50%;
+	left:50%;
+}
+.social{
+	background-color:lightgray;
+	height:150px;
+
+}
+.social span p {display:inline-block;}
+
+.facebook,.instagram,.twitter {
+	margin:15px;
+	
+	
+}
+@media (min-width:320px){
+	.pausebutton {
+		position: absolute;
+		top: 85%;
+		left: 70%;
+	}
+	a.carousel-control-next, a.carousel-control-prev{height:300px;}
+}
+
+@media (min-width:768px){
+	.navbar-brand{display: block; position:relative; transform:translateX(-50%);
+	left:50%;}
+	.container{max-width:720px;}
+.pausebutton {
+    position: absolute;
+    top: 80%;
+    left: 80%;
+    }
+.carousel-inner {
+    height:400px;
+        
+}
+.carousel-item { 
+    height:400px;}
 .flip-container {
     perspective: 1000px;
   
@@ -68,27 +157,34 @@ body {font-family: 'Great Vibes', cursive;
     transform: rotateY(180deg);
     margin:20px;
 }
-
-.social{
-	text-align:center;
-}
-
-@media (min-width:320px){
-
-}
-
-@media (min-width:768px){
-.container{max-width:720px;}
-       
-
+a.carousel-control-next, a.carousel-control-prev{height:300px;}
 }
 
 
 @media(min-width:980px){
-.container{max-width:900px;}
+	.navbar-brand{display:block;transform:translateX(-50%);
+		left:50%;
+		position:absolute;}
+	.nav-container .navbar .navbar-nav .nav-item{ display:inline-block; position:relative;left:-10px;padding:0 15px;z-index:2;}
+.nav-container .navbar .navbar-nav .nav-item a {letter-spacing:1px; padding:16px 55px;}
+.container{max-width:960px;}
+.pic{width:275px;height:275px; display:inline-block;}
 .flip-container, .front, .back, .card  {
 	
 	height: 480px;
 }
 .fields{width:600px;text-align:center;}
+.pausebutton {
+    position: absolute;
+    top: 90%;
+    left: 90%;
+}
+.carousel-inner {
+    height:600px;
+}
+.carousel-item {
+    height:600px;
+}
+a.carousel-control-next, a.carousel-control-prev{height:500px;}
+.lespaul{margin:auto;}
 }
