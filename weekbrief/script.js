@@ -1,7 +1,4 @@
-
-
-
-$(document).ready(function(){
+$(document).ready(function () {
     $('.carousel').carousel({
         interval: 5000,
         keyboard: false
@@ -9,7 +6,7 @@ $(document).ready(function(){
 });
 
 let carouselPaused = false;
-$('.playbutton').click(function(){
+$('.playbutton').click(function () {
     if (carouselPaused) {
         $('.carousel').carousel('cycle');
         $(this).text("Pause");
@@ -20,13 +17,13 @@ $('.playbutton').click(function(){
     carouselPaused = !carouselPaused;
 });
 
-var itemNum=0;
- var button1=document.getElementById('btn-now');
- var display=document.getElementById('itemNum');
- button1.addEventListener('click',function(){
-    
-     itemNum +=1;
-     document.getElementById('itemNum').innerHTML=itemNum;
- });
+var itemNum = 0;
+var button1 = document.getElementById('btn-now');
+var display = document.getElementById('itemNum');
+button1.addEventListener('click', function () {
+
+    itemNum += 1;
+    document.getElementById('itemNum').innerHTML = itemNum;
+});
 
 document.querySelector("#myCard").classList.toggle("flip");

@@ -1,325 +1,491 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link href="main.css" rel="stylesheet">
-   
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Raleway&display=swap" rel="stylesheet">
-   
-    <title>Brief</title>
-  </head>
-  <body>
-    <header class="container-fluid nav-container">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <a class="navbar-brand"><img src="gleeclublogo.png" alt="gleemusic logo" width="80" height="80"></a>
-        
-        
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav text-center">
-              <li class="nav-item ">
-                  <a class="nav-link" href="index.html">Home </a>
-                </li>
-                <li class="nav-item active">
-                  <a class="nav-link" href="products1.html">Keyboards</a><span class="sr-only">(current)</span>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="products2.html">Basses</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="products3.html">Drums
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="blog.html">Blog</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="about.html">About/Faq</a>
-                  </li>
-                  </ul>
-                </div>
-             
-              
-        <div class="cart">
-          <div class="cart-btn p-3" > 
-      <a class="checkout" href="checkout.html">
-               <i class="fas fa-cart-plus" aria-hidden="true"></i>
-                <p id="itemNum" class="pl-1">0</p></a>
-                
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+  <link href="main.css" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Raleway&display=swap" rel="stylesheet">
+
+  <title>Brief</title>
+</head>
+
+<body>
+  <header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+
+      <a class="navbar-brand" href="index.html"><img src="gleeclublogo.png" alt="gleemusic logo" width="80"
+          height="80"></a>
+
+
+
+      <div class="collapse navbar-collapse px-5" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto text-center">
+          <li class="nav-item">
+            <a class="nav-link px-5" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item dropdown active">
+            <a class="nav-link px-5 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Products</a>
+            <div class="dropdown-menu text-center" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="products1.html">Keyboards</a>
+              <a class="dropdown-item" href="products2.html">Basses</a>
+
+              <a class="dropdown-item" href="products3.html">Drums</a>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link px-5" href="blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-5" href="about.html">About/Faq</a>
+          </li>
+        </ul>
       </div>
-    </div>
-      <div class="navbar-nav ml-auto">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-<span class="navbar-toggler-icon"></span></button>
 
-</div>
+
+
+
+
+
+      <div class="cart">
+        <div class="cart-btn p-3">
+          <a class="checkout" href="checkout.html">
+            <i class="fas fa-cart-plus" aria-hidden="true"></i>
+            <p id="itemNum" class="pl-1">0</p>
+          </a>
+
+        </div>
+      </div>
+      <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span></button>
 
     </nav>
+
+
   </header>
-        <main>
-            <div id="carouselExampleIndicators" class="carousel slide mb-5" data-ride="carousel">
-                <ol class="carousel-indicators">
-                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                  <div class="carousel-item active" style= "background-image:url('keyjumb.jpg');"  alt="keyboard">
-                    <div class="carousel-caption d-none d-md-block">
-                  </div>
-                  </div>
-                  <div class="carousel-item"
-                    style="background-image:url('spectorbolton.jpg');" alt="bass">
-                    <div class="carousel-caption d-none d-md-block">
+  <main>
+    <div id="carouselExampleIndicators" class="carousel slide mb-5" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active" style="background-image:url('keyjumb.jpg');" alt="keyboard picture">
 
-                    </div>
-                    <div class="products2"><a href="products2.html"><button type="button" class="btn btn-primary productstwo">Basses</button>
-                    </a></div>
-                   </div>
-                  
-                    <div class="carousel-item"
-                    style="background-image:url('drumsjumb.jpg');" alt="drums">
-                    <div class="carousel-caption d-none d-md-block"></div>
-                    <div class="products3"><a href="products3.html"><button type="button" class="btn btn-primary productsthree">Basses</button>
-                    </a></div>
-                </div>
-              </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
-                </a>
+          <div class="carousel-caption d-none d-md-block p-5">
+            <h3>Keyboards</h3>
+            <p class="keys">We got all the keys you want</p>
+          </div>
+        </div>
 
-                <div class="pausebutton"><button type="button" class="btn btn-primary playbutton">Pause</button>
+        <div class="carousel-item" style="background-image:url('spectorbolton.jpg');" alt="bass picture">
+          <div class="carousel-caption d-none d-md-block p-5">
+            <h3>Basses</h3>
+            <p class="keys">We got all the strings you want</p>
+            <a class="btn btn-primary" href="products2.html" role="button">Learn More</a>
+
+
+
+
+
+          </div>
+        </div>
+
+        <div class="carousel-item" style="background-image:url('drumsjumb.jpg');" alt="drums picture">
+          <div class="carousel-caption d-none d-md-block p-5">
+            <h3>Drums</h3>
+            <p class="keys">We got all the beats you want</p>
+            <a class="btn btn-primary" href="products3.html" role="button">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+
+      <div class="pausebutton"><button type="button" class="btn btn-outline-light btn-sm playbutton">Pause</button>
+      </div>
+
+    </div>
+
+    <div class="container mb-5">
+      <div class="row">
+        <div class="col mt-3 text-center">
+          <h3>Keyboards</h3>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container mt-3">
+
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+        <div class="col mb-4">
+          <div class="flip-container card">
+            <div class="flipper">
+              <div class="front">
+                <div style="background-image:url(Fantom-6-large.jpg); background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: 100%;height: 250px;
+                  ;"></div>
+                <div class="card-body">
+                  <h5 class="card-title">Roland Fantom 6</h5>
+                  <p class="card-text">16-part Multitimbral Music Workstation with 61-note Semi-weighted Keyboard</p>
+                  <strong>
+                    <p class="keys">$3300.00</p>
+                  </strong>
                 </div>
-        
               </div>
-            
-            
-              <div class="container mt-3">
-                
-                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
-                  <div class="col mb-4">
-              <div class="flip-container card">
-                <div class="flipper">
-                  <div class="front">
-                    <img src="Fantom-6-large.jpg" class="card-img-top img-fluid" alt="...">
-                
-                  <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  </div>
-                </div>
-                  <div class="back">
-      <p>an amzing qualuty keboard with all the liking of a studio musicians can agree.</p>
-                  </div>
-                </div>
+              <div class="back">
+                <p>Here is a special coupon code for 25% off. You can use this with no restrictions for finding an
+                  easter egg on our site.
+                </p>
+                <p> <span><strong>Code: GETKEYSNOW</strong></span></p>
+                <p> Enjoy your time looking through out site. check out our blog too.
+                </p>
               </div>
-                
-              <div class="buynow">
-       
-                <button id="btn-now" input type="button">Add to Cart</button></div>
             </div>
-                  
-             
-              <div class="col mb-4">
-                <div class="flip-container card">
-                  <div class="flipper">
-                    <div class="front">
-                      <img src="Fantom-6-large.jpg" class="card-img-top img-fluid" alt="...">
-                  
-                    <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                   
-                  </div>
+          </div>
 
-                  </div>
-                    <div class="back">
-        <p>an amzing qualuty keboard with all the liking of a studio musicians can agree.</p>
-                    </div>
-                  </div>
+
+          <div class="detail"><a href="productpreview1.html"><button id="detailnow" class="btn-info btn-block" input
+                type="button">Product Detail</button></a></div>
+          <div class="buynow">
+
+            <button id="btn-now" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off"
+              input type="button">Add to Cart</button></div>
+        </div>
+
+
+        <div class="col mb-4">
+          <div class="flip-container card">
+            <div class="flipper">
+              <div class="front">
+
+                <div style="background-image:url(akaikeys.jpg); background-position: center;
+                      background-repeat: no-repeat;
+                      background-size: 100%;height: 250px;
+                    ;"></div>
+                <div class="card-body">
+                  <h5 class="card-title">AKAI Mpk Mini</h5>
+                  <p class="card-text">16-part Multitimbral Music Workstation with 61-note Semi-weighted Keyboard</p>
+                  <strong>
+                    <p class="keys">$120.00</p>
+                  </strong>
                 </div>
-                <div class="buynow">
-       
-                  <button id="btn-now" input type="button">Add to Cart</button></div>
-              </div>
-                <div class="col mb-4">
-                  <div class="flip-container card">
-                    <div class="flipper">
-                      <div class="front">
-                        <img src="Fantom-6-large.jpg" class="card-img-top img-fluid" alt="...">
-                    
-                      <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      </div>
-                    </div>
-                      <div class="back">
-          <p>an amzing qualuty keboard with all the liking of a studio musicians can agree.</p>
-                      </div>
-                    </div>
-                  </div>
 
-                  <div class="buynow">
-       
-                    <button id="btn-now" input type="button">Add to Cart</button></div>
+              </div>
+              <div class="back">
+                <p>Here is a special coupon code for 25% off. You can use this with no restrictions for finding an
+                  easter egg on our site.
+                </p>
+                <p> <span><strong>Code: GETKEYSNOW</strong></span></p>
+                <p> Enjoy your time looking through out site. check out our blog too.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="detail"><a href="productpreview1.html"><button id="detailnow" class="btn-info btn-block" input
+                type="button">Product Detail</button></a></div>
+          <div class="buynow">
+
+            <button id="btn-now" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off"
+              input type="button">Add to Cart</button></div>
+        </div>
+
+        <div class="col mb-4">
+          <div class="flip-container card">
+            <div class="flipper">
+              <div class="front">
+                <div style="background-image:url(KompKA-49-large.jpg); background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: 100%;height: 250px;
+                      ;"></div>
+                <div class="card-body">
+                  <h5 class="card-title">Komplete S61</h5>
+                  <p class="card-text">61-key Controller with Fatar Keybed and Custom Controls Designed </p>
+
+                  <strong>
+                    <p class="keys">$800.00</p>
+                  </strong>
                 </div>
-                  <div class="col mb-4">
-                    <div class="flip-container card">
-                      <div class="flipper">
-                        <div class="front">
-                          <img src="Fantom-6-large.jpg" class="card-img-top img-fluid" alt="...">
-                      
-                        <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        </div>
-                      </div>
-                        <div class="back">
-            <p>an amzing qualuty keboard with all the liking of a studio musicians can agree.</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="buynow">
-       
-                      <button id="btn-now" input type="button">Add to Cart</button></div>
-                  </div>
-                    <div class="col mb-4">
-                      <div class="flip-container card">
-                        <div class="flipper">
-                          <div class="front">
-                            <img src="Fantom-6-large.jpg" class="card-img-top img-fluid" alt="...">
-                        
-                          <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                          </div>
-                        </div>
-                          <div class="back">
-              <p>an amzing qualuty keboard with all the liking of a studio musicians can agree.</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="buynow">
-       
-                        <button id="btn-now" input type="button">Add to Cart</button></div>
-                    </div>
-                      <div class="col mb-4">
-                        <div class="flip-container card">
-                          <div class="flipper">
-                            <div class="front">
-                              <img src="Fantom-6-large.jpg" class="card-img-top img-fluid" alt="...">
-                          
-                            <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            </div>
-                          </div>
-                            <div class="back">
-                <p>an amzing qualuty keboard with all the liking of a studio musicians can agree.</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="buynow">
-       
-                          <button id="btn-now" input type="button">Add to Cart</button></div>
-                      </div>
-                        <div class="col mb-4">
-                   
-                          <div class="flip-container card">
-                            <div class="flipper">
-                              <div class="front">
-                                <img src="Fantom-6-large.jpg" class="card-img-top img-fluid" alt="...">
-                            
-                              <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                              </div>
-                            </div>
-                              <div class="back">
-                  <p>an amzing qualuty keboard with all the liking of a studio musicians can agree.</p>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="buynow">
-       
-                            <button id="btn-now" input type="button">Add to Cart</button></div>
-                        </div>
-                          <div class="col mb-4">
-                            <div class="flip-container card">
-                              <div class="flipper">
-                                <div class="front">
-                                  <img src="Fantom-6-large.jpg" class="card-img-top img-fluid" alt="...">
-                              
-                                <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                </div>
-                              </div>
-                                <div class="back">
-                    <p>an amzing qualuty keboard with all the liking of a studio musicians can agree.</p>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="buynow">
-       
-                              <button id="btn-now" input type="button">Add to Cart</button></div>
-                          </div>
-
-                            <div class="col mb-4">
-                              <div class="flip-container card">
-                                <div class="flipper">
-                                  <div class="front">
-                                    <img src="Fantom-6-large.jpg" class="card-img-top img-fluid" alt="...">
-                                
-                                  <div class="card-body">
-                                  <h5 class="card-title">Card title</h5>
-                                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                  </div>
-                                </div>
-                                  <div class="back">
-                      <p>an amzing qualuty keboard with all the liking of a studio musicians can agree.</p>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="buynow">
-       
-                                <button id="btn-now" input type="button">Add to Cart</button></div>
-                            </div>
               </div>
+              <div class="back">
+                <p>Here is a special coupon code for 25% off. You can use this with no restrictions for finding an
+                  easter egg on our site.
+                </p>
+                <p> <span><strong>Code: GETKEYSNOW</strong></span></p>
+                <p> Enjoy your time looking through out site. check out our blog too.
+                </p>
               </div>
-        </main>
-        <footer class="social mt-3 py-5 text-center">
-          <span><p> Check us out on social!</p></span>
-          <i class="fab fa-facebook-square fa-2x facebook"></i>
-          <i class="fab fa-instagram-square fa-2x instagram"></i>
-          <i class="fab fa-twitter fa-2x twitter"></i>
-          <span><p>&copy; 2020 MusicGlee Inc.</p></span>
-        </footer>
-      
-    <!-- Optional JavaScript; choose one of the two! -->
+            </div>
+          </div>
+          <div class="detail"><a href="productpreview1.html"><button id="detailnow" class="btn-info btn-block" input
+                type="button">Product Detail</button></a></div>
+          <div class="buynow">
 
-    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
- 
-    <script src="script.js"></script>
+            <button id="btn-now" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off"
+              input type="button">Add to Cart</button></div>
+        </div>
 
-  
-    <script src="https://kit.fontawesome.com/1af4703ecf.js" crossorigin="anonymous"></script>
-    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+        <div class="col mb-4">
+          <div class="flip-container card">
+            <div class="flipper">
+              <div class="front">
+                <div style="background-image:url(Kross2-61BK-large.jpg); background-position: center;
+                          background-repeat: no-repeat;
+                          background-size: 100%;height: 250px;
+                        ;"></div>
+                <div class="card-body">
+                  <h5 class="card-title">Korg Kross 2</h5>
+                  <p class="card-text">61-key Workstation with Synth-action Keybed, Matte Black.</p>
+                  <strong>
+                    <p class="keys">$800.00</p>
+                  </strong>
+                </div>
+              </div>
+              <div class="back">
+                <p>Here is a special coupon code for 25% off. You can use this with no restrictions for finding an
+                  easter egg on our site.
+                </p>
+                <p> <span><strong>Code: GETKEYSNOW</strong></span></p>
+                <p> Enjoy your time looking through out site. check out our blog too.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="detail"><a href="productpreview1.html"><button id="detailnow" class="btn-info btn-block" input
+                type="button">Product Detail</button></a></div>
+          <div class="buynow">
+
+            <button id="btn-now" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off"
+              input type="button">Add to Cart</button></div>
+        </div>
+
+        <div class="col mb-4">
+          <div class="flip-container card">
+            <div class="flipper">
+              <div class="front">
+                <div style="background-image:url(nektar_impact-gx61.jpg); background-position: center;
+                            background-repeat: no-repeat;
+                            background-size: 100%;height: 250px;
+                          ;"></div>
+                <div class="card-body">
+                  <h5 class="card-title">Nektar ImpactLX</h5>
+                  <p class="card-text">Nektar 88-key USB-MIDI Keyboard Controller</p>
+                  <strong>
+                    <p class="keys">$300.00</p>
+                  </strong>
+                </div>
+              </div>
+              <div class="back">
+                <p>Here is a special coupon code for 25% off. You can use this with no restrictions for finding an
+                  easter egg on our site.
+                </p>
+                <p> <span><strong>Code: GETKEYSNOW</strong></span></p>
+                <p> Enjoy your time looking through out site. check out our blog too.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="detail"><a href="productpreview1.html"><button id="detailnow" class="btn-info btn-block" input
+                type="button">Product Detail</button></a></div>
+          <div class="buynow">
+
+            <button id="btn-now" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off"
+              input type="button">Add to Cart</button></div>
+        </div>
+
+        <div class="col mb-4">
+          <div class="flip-container card">
+            <div class="flipper">
+              <div class="front">
+                <div style="background-image:url(nektarkeys.jpg); background-position: center;
+                              background-repeat: no-repeat;
+                              background-size: 100%;height: 250px;
+                            ;"></div>
+                <div class="card-body">
+                  <h5 class="card-title">Nektar Impact</h5>
+                  <p class="card-text">Nektar 61-key USB-MIDI Keyboard Controller</p>
+                  <strong>
+                    <p class="keys">$200.00</p>
+                  </strong>
+                </div>
+              </div>
+              <div class="back">
+                <p>Here is a special coupon code for 25% off. You can use this with no restrictions for finding an
+                  easter egg on our site.
+                </p>
+                <p> <span><strong>Code: GETKEYSNOW</strong></span></p>
+                <p> Enjoy your time looking through out site. check out our blog too.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="detail"><a href="productpreview1.html"><button id="detailnow" class="btn-info btn-block" input
+                type="button">Product Detail</button></a></div>
+          <div class="buynow">
+
+            <button id="btn-now" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off"
+              input type="button">Add to Cart</button></div>
+        </div>
+
+        <div class="col mb-4">
+
+          <div class="flip-container card">
+            <div class="flipper">
+              <div class="front">
+                <div style="background-image:url(nordelectkeys.jpg); background-position: center;
+                                background-repeat: no-repeat;
+                                background-size: 100%;height: 250px;
+                              ;"></div>
+                <div class="card-body">
+                  <h5 class="card-title">Nord Electro</h5>
+                  <p class="card-text">61-note Stage Piano with Piano and Organ Sounds</p>
+                  <strong>
+                    <p class="keys">$2200.00</p>
+                  </strong>
+                </div>
+              </div>
+              <div class="back">
+                <p>Here is a special coupon code for 25% off. You can use this with no restrictions for finding an
+                  easter egg on our site.
+                </p>
+                <p> <span><strong>Code: GETKEYSNOW</strong></span></p>
+                <p> Enjoy your time looking through out site. check out our blog too.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="detail"><a href="productpreview1.html"><button id="detailnow" class="btn-info btn-block" input
+                type="button">Product Detail</button></a></div>
+          <div class="buynow">
+
+            <button id="btn-now" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off"
+              input type="button">Add to Cart</button></div>
+        </div>
+
+        <div class="col mb-4">
+          <div class="flip-container card">
+            <div class="flipper">
+              <div class="front">
+                <div style="background-image:url(rolandvr09.jpg); background-position: center;
+                                  background-repeat: no-repeat;
+                                  background-size: 100%;height: 250px;
+                                ;"></div>
+                <div class="card-body">
+                  <h5 class="card-title">Roland V-Combo</h5>
+                  <p class="card-text">61-key Portable Performance Keyboard with Organ.</p>
+                  <strong>
+                    <p class="keys">$999.00</p>
+                  </strong>
+                </div>
+              </div>
+              <div class="back">
+                <p>Here is a special coupon code for 25% off. You can use this with no restrictions for finding an
+                  easter egg on our site.
+                </p>
+                <p> <span><strong>Code: GETKEYSNOW</strong></span></p>
+                <p> Enjoy your time looking through out site. check out our blog too.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="detail"><a href="productpreview1.html"><button id="detailnow" class="btn-info btn-block" input
+                type="button">Product Detail</button></a></div>
+          <div class="buynow">
+
+            <button id="btn-now" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off"
+              input type="button">Add to Cart</button></div>
+        </div>
+
+
+        <div class="col mb-4">
+          <div class="flip-container card">
+            <div class="flipper">
+              <div class="front">
+                <div style="background-image:url(VR09BK-large.jpg); background-position: center;
+                                    background-repeat: no-repeat;
+                                    background-size: 100%;height: 250px;
+                                  ;"></div>
+                <div class="card-body">
+                  <h5 class="card-title">Roland V-Combo 73</h5>
+                  <p class="card-text">73-key Portable Performance Keyboard with Organ</p>
+                  <strong>
+                    <p class="keys">$1599.00</p>
+                  </strong>
+                </div>
+              </div>
+              <div class="back">
+                <p>Here is a special coupon code for 25% off. You can use this with no restrictions for finding an
+                  easter egg on our site.
+                </p>
+                <p> <span><strong>Code: GETKEYSNOW</strong></span></p>
+                <p> Enjoy your time looking through out site. check out our blog too.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="detail"><a href="productpreview1.html"><button id="detailnow" class="btn-info btn-block" input
+                type="button">Product Detail</button></a></div>
+          <div class="buynow">
+
+            <button id="btn-now" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off"
+              input type="button">Add to Cart</button></div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+  <footer class="social mt-3 py-5 text-center">
+    <span>
+      <p> Check us out on social!</p>
+    </span>
+    <i class="fab fa-facebook-square fa-2x facebook"></i>
+    <i class="fab fa-instagram-square fa-2x instagram"></i>
+    <i class="fab fa-twitter fa-2x twitter"></i>
+    <span>
+      <p>&copy; 2020 MusicGlee Inc.</p>
+    </span>
+  </footer>
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+  </script>
+
+  <script src="script.js"></script>
+
+
+  <script src="https://kit.fontawesome.com/1af4703ecf.js" crossorigin="anonymous"></script>
+  <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
     -->
-  </body>
+</body>
+
 </html>

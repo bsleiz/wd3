@@ -1,190 +1,368 @@
-body {font-family: 'Great Vibes', cursive;
-	font-family: 'Raleway', sans-serif;}
+body {
+	font-family: 'Raleway', sans-serif;
+}
 
 
-	header {
-		
-		height:120px;padding:10px;
-		
-	}
-	nav {height:120px;}
+header {
+	height: 10vh;
+}
 
-	
+label {
+	font-size: 20px;
+}
 
-	
-ul li {font-size:24px; margin-right:40px;}
-	
-.pic{width:250px;height:250px; display:inline-block;}
-.cart .cart-btn{ top:60px; right:75px;
-position:absolute; transform:translateY(-50%);border-radius:50px;}
-.cart .cart-btn p{color:white;background-color:blue;top:30%;position:absolute;right:6px;transform:translateY(-50%);padding:1px 5px;border-radius:50px;}
-.cart .cart-btn i{font-size:2rem;}
-.cart .cart-btn p:hover{background-color:green;}
-.cart .cart-btn i:hover{text-decoration:none; color:green;}
-.cart .cart-btn i{color:black;}
+li a {
+	font-size: 1.75rem;
+}
+
+.card-img-top {
+	max-height: 250px;
+}
+
+.card img {
+	height: 260px;
+	width: 260px;
+}
+
+.keys {
+	font-size: 20px;
+}
+
+.card-text {
+	font-size: 20px;
+}
+
+.pic {
+	width: 250px;
+	height: 250px;
+	display: inline-block;
+}
+
+.cart .cart-btn {
+	top: 55px;
+	right: 75px;
+	position: absolute;
+	transform: translateY(-50%);
+	border-radius: 50px;
+}
+
+.cart .cart-btn p {
+	color: white;
+	background-color: rgb(136, 134, 134);
+	top: 30%;
+	position: absolute;
+	right: 6px;
+	transform: translateY(-50%);
+	padding: 1px 5px;
+	border-radius: 50px;
+}
+
+.cart .cart-btn i {
+	font-size: 2rem;
+}
+
+.cart .cart-btn p:hover {
+	background-color: green;
+}
+
+.cart .cart-btn i:hover {
+	text-decoration: none;
+	color: green;
+}
+
+.cart .cart-btn i {
+	color: black;
+}
+
 .jumbotron {
-		background-image: url('da2cd925bffd14af304889883503c2fa95defa14.jpg');
-		background-repeat:no-repeat;
-		background-position:center;
-		background-size:cover;
-		height:370px;
-	}
-	
-	
-	.display-4{
-		background-color:white;
-	}
-	p.lead {font-size: 30px;}
-	.jumbotron .lead {
-		font-family: 'Great Vibes', cursive;
-		background-color:rgba(200, 202, 191, 0.8);
-		color: black;
-		padding: .25rem;
-	}
+	background-image: url('guitarsfront.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 450px;
+}
 
-	.pausebutton .btn {
-		width: 80px;
-		height: 40px;
-	}
-	.carousel-inner {
-		height:400px;
-		width:100%;
-	}
-	
-	.carousel-item {
-		background-repeat:no-repeat;
-		background-size:cover;
-		background-position:center;
-		height:400px;
-	}
-	
+.music {
+	font-size: 20px;
+}
 
+.display-4 {
+	background-color: white;
+}
 
-.img-fluid{display:inline-block;}
+p.lead {
+	font-size: 20px;
+}
 
-.buynow{text-align:center;padding:20px;}
+.jumbotron {
+	padding-top: 110px;
+}
 
-.productstwo{
+.jumbotron .lead {
+
+	background-color: rgba(200, 202, 191, 0.8);
+	color: black;
+	padding: .25rem;
+}
+
+.carousel-inner {
+	height: 400px;
+	width: 100%;
+}
+
+.carousel-item {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 400px;
+}
+
+.founder {
+	font-size: 1.25rem;
+}
+
+.buynow {
+	text-align: center;
+	padding: 20px;
+}
+
+.productstwo {
 	position: absolute;
-	top:50%;
-	left:50%;
+	top: 50%;
+	left: 50%;
 }
-.productsthree{
+
+.productsthree {
 	position: absolute;
-	top:50%;
-	left:50%;
+	top: 50%;
+	left: 50%;
 }
-.productsone{
+
+.productsone {
 	position: absolute;
-	top:50%;
-	left:50%;
+	top: 50%;
+	left: 50%;
 }
-.social{
-	background-color:lightgray;
-	height:150px;
+
+.social {
+	background-color: lightgray;
+	height: 150px;
+	
 
 }
-.social span p {display:inline-block;}
 
-.facebook,.instagram,.twitter {
-	margin:15px;
-	
-	
+.social span p {
+	display: inline-block;
 }
-@media (min-width:320px){
+
+.facebook,
+.instagram,
+.twitter {
+	margin: 15px;
+}
+
+.orange {
+	background-image: url('akaikeys.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 250px;
+	padding: 0;
+}
+
+.gretsch {
+	background-image: url('gretschbass.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 250px;
+	padding: 0;
+}
+
+.getreal {
+	background-image: url('getrealdrums.jpg');
+	height: 250px;
+	padding: 0;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.btn-outline-info {
+	border-color: lightgrey;
+}
+
+.btn-info {
+	background-color: rgb(138, 137, 137);
+	border-color: grey;
+}
+
+.btn-primary {
+	background-color: grey;
+	border-color: black;
+}
+
+.blog {
+	padding: 0;
+}
+
+.read {
+	font-size: 1.25rem;
+
+}
+
+@media (min-width:320px) {
+    
+	.back {
+		display: none;
+	}
+
 	.pausebutton {
 		position: absolute;
-		top: 85%;
-		left: 70%;
+		top: 70%;
+		left: 43%;
 	}
-	a.carousel-control-next, a.carousel-control-prev{height:300px;}
 }
 
-@media (min-width:768px){
-	.navbar-brand{display: block; position:relative; transform:translateX(-50%);
-	left:50%;}
-	.container{max-width:720px;}
-.pausebutton {
-    position: absolute;
-    top: 80%;
-    left: 80%;
-    }
-.carousel-inner {
-    height:400px;
-        
-}
-.carousel-item { 
-    height:400px;}
-.flip-container {
-    perspective: 1000px;
-  
-}
-	/* flip the pane when hovered */
-	.flip-container:hover .flipper, .flip-container.hover .flipper, .flip-container.flip .flipper {
-        transform: rotateY(180deg);
-    }
-.flip-container, .front, .back ,.card{
+@media (min-width:768px) {
+	.jumbotron {
+		padding-top: 150px;
+	}
 	
-	height:480px;
-}
-
-/* flip speed goes here */
-.flipper {
-	transition: 0.6s;
-	transform-style: preserve-3d;
-
-	position: relative;
-}
-
-/* hide back of pane during swap */
-.front, .back {
-	backface-visibility: hidden;
-
-	position: absolute;
-	top: 0;
-	left: 0;
-}
-
-/* front pane, placed above back */
-.front {
-	z-index: 2;
-	/* for firefox 31 */
-	transform: rotateY(0deg);
-}
-
-/* back, initially hidden pane */
-.back {
-    transform: rotateY(180deg);
-    margin:20px;
-}
-a.carousel-control-next, a.carousel-control-prev{height:300px;}
-}
-
-
-@media(min-width:980px){
-	.navbar-brand{display:block;transform:translateX(-50%);
-		left:50%;
-		position:absolute;}
-	.nav-container .navbar .navbar-nav .nav-item{ display:inline-block; position:relative;left:-10px;padding:0 15px;z-index:2;}
-.nav-container .navbar .navbar-nav .nav-item a {letter-spacing:1px; padding:16px 55px;}
-.container{max-width:960px;}
-.pic{width:275px;height:275px; display:inline-block;}
-.flip-container, .front, .back, .card  {
 	
-	height: 480px;
+	.back {
+		display: block;
+	}
+
+	.cart .cart-btn {
+		top: 55px;
+		right: 75px;
+	}
+
+	.pausebutton {
+		position: absolute;
+		top: 75%;
+		left: 75%;
+	}
+
+	.carousel-inner {
+		height: 400px;
+
+	}
+
+	.carousel-item {
+		height: 400px;
+	}
+
+	.flip-container {
+		perspective: 1000px;
+
+	}
+
+
+	.flip-container:hover .flipper,
+	.flip-container.hover .flipper,
+	.flip-container.flip .flipper {
+		transform: rotateY(180deg);
+	}
+
+	.flip-container,
+	.front,
+	.back,
+	.card {
+
+		height: 480px;
+	}
+
+
+	.flipper {
+		transition: 0.6s;
+		transform-style: preserve-3d;
+
+		position: relative;
+	}
+
+
+	.front,
+	.back {
+		backface-visibility: hidden;
+
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+
+	.front {
+		z-index: 2;
+		transform: rotateY(0deg);
+	}
+
+
+	.back {
+		transform: rotateY(180deg);
+		margin: 20px;
+	}
+
+
+
 }
-.fields{width:600px;text-align:center;}
-.pausebutton {
-    position: absolute;
-    top: 90%;
-    left: 90%;
-}
-.carousel-inner {
-    height:600px;
-}
-.carousel-item {
-    height:600px;
-}
-a.carousel-control-next, a.carousel-control-prev{height:500px;}
-.lespaul{margin:auto;}
+
+
+@media(min-width:980px) {
+
+	.navbar-brand {
+		margin-right: 0;
+	}
+
+	.cart .cart-btn {
+		top: 55px;
+		right: 15px;
+	}
+
+	.pic {
+		width: 275px;
+		height: 275px;
+		display: inline-block;
+	}
+
+	.flip-container,
+	.front,
+	.back,
+	.card {
+
+		height: 480px;
+	}
+
+	.fields {
+		width: 600px;
+		text-align: center;
+	}
+
+	.pausebutton {
+		position: absolute;
+		top: 80%;
+		left: 80%;
+	}
+
+	.carousel-inner {
+		height: 450px;
+	}
+
+	.carousel-item {
+		height: 450px;
+	}
+
+	.lespaul {
+		margin: auto;
+	}
+
+	.container .display-4 {
+		width: 60%;
+	}
+
+	p.lead {
+		width: 50%;
+	}
+
 }

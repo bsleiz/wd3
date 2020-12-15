@@ -1,127 +1,211 @@
 <doctype html>
-<html lang="en">
+  <html lang="en">
+
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
     <link href="main.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Raleway&display=swap" rel="stylesheet">
-   
+
     <title>Brief</title>
   </head>
+
   <body>
-    <header class="container-fluid nav-container">
+    <header>
+
       <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+
         <a class="navbar-brand"><img src="gleeclublogo.png" alt="gleemusic logo" width="80" height="80"></a>
-        
-        
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav text-center">
-              <li class="nav-item">
-                  <a class="nav-link" href="index.html">Home </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="products1.html">Keyboards</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="products2.html">Basses</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="products3.html">Drums
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="blog.html">Blog</a>
-                  </li>
-                  <li class="nav-item active">
-                    <a class="nav-link" href="about.html">About/Faq</a><span class="sr-only">(current)</span>
-                  </li>
-                 
-                      </ul>
-                    </div>
-                    
-                  
+
+
+
+        <div class="collapse navbar-collapse px-5" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto text-center">
+            <li class="nav-item">
+              <a class="nav-link px-5" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link px-5 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Products</a>
+              <div class="dropdown-menu text-center" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="products1.html">Keyboards</a>
+                <a class="dropdown-item" href="products2.html">Basses</a>
+
+                <a class="dropdown-item" href="products3.html">Drums</a>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link px-5" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link px-5" href="about.html">About/Faq</a>
+            </li>
+          </ul>
+        </div>
+
+
+
+
+
+
         <div class="cart">
-          <div class="cart-btn p-3" > 
-      <a class="checkout" href="checkout.html">
-               <i class="fas fa-cart-plus" aria-hidden="true"></i>
-                <p id="itemNum" class="pl-1">0</p></a>
-                
+          <div class="cart-btn p-3">
+            <a class="checkout" href="checkout.html">
+              <i class="fas fa-cart-plus" aria-hidden="true"></i>
+              <p id="itemNum" class="pl-1">0</p>
+            </a>
+
+          </div>
+        </div>
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
+          data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span></button>
+
+      </nav>
+
+
+    </header>
+    <main>
+      <section class="container mt-5 mb-2">
+
+        <div class="row">
+          <div class="col-lg-6">
+            <img src="Paulhistory bass.jpg" class="img-fluid lespaul" alt="founder picture">
+
+            <h3 class="mt-3">About MusicGlee</h3>
+            <p class="music">
+              MusicGlee is a leading retailer of musical instruments, lessons, repairs and rentals in the U.S. With
+              nearly 300 stores
+              across the U.S. and one of the top direct sales websites in the industry, Guitar Center has helped people
+              make music for more than 50 years.
+              Guitar Center also provides customers with various musician-based services, including Guitar Center
+              Lessons,
+              where musicians of all ages and skill levels can learn to play a variety of instruments in many music
+              genres;
+              GC Repairs, an on-site maintenance and repairs service;
+              and GC Rentals, a program offering easy rentals of instruments and other sound reinforcement gear.
+              Additionally, Guitar Center’s sister brands include Music & Arts, which operates more than 200 stores
+              specializing
+              in band & orchestral instruments for sale and rental, serving teachers, band directors, college professors
+              and students,
+              and Musician’s Friend, a leading direct marketer of musical instruments in the United States. With an
+              unrivaled in-store
+              experience and passionate commitment to making gear easy-to-buy, Guitar Center is all about enabling
+              musicians and non-musicians
+              alike to experience the almost indescribable joy that comes from playing an instrument.</p>
+          </div>
+
+          <div class="col-lg-6">
+            <h3>Orders</h3>
+            <p class="music">
+              All orders, including, online orders, telephone orders and preorders for limited availability products are
+              not binding upon
+              Guitar Center until we accept them. Unless otherwise agreed by Guitar Center, payment must be processed by
+              Guitar Center prior
+              to an order being accepted. Guitar Center will communicate its acceptance of an order by acknowledging
+              your order by reply
+              email then processing your payment and shipping the item(s) ordered to you or by processing your payment
+              in-store and providing
+              the item(s) ordered to you. We reserve the right to refuse to provide products or services to anyone.</p>
+
+            <p class="music">Because prices, product descriptions and availability can change quickly, Guitar Center
+              does not warrant the
+              accuracy or completeness of the information provided on the Site, in our stores or in written materials
+              and is not responsible
+              for pricing, typographical or other errors.
+
+              If a product you purchase does not match the description on the Site, as your sole and exclusive remedy
+              you may return the product,
+              unused, to Guitar Center and receive a refund of your purchase price.
+
+              Items in your shopping cart will reflect the most recent price displayed on each item's product detail
+              page. Prices are frequently
+              updated to adjust for different sales, limited pricing, and other discounting. Therefore, prices on the
+              product detail page and in
+              your cart may change after such updates to reflect the current prices. Placing items in your cart does not
+              reserve the current prices
+              shown at that time. Prices are reserved only by placing an order.
+            </p>
+
+
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <img src="keyboardinvent.jpg" class="img-fluid lespaul" alt="founder picture">
+
+          </div>
+          <div class="col-lg-6">
+            <h3>Returns</h3>
+            <p class="music">45 Day Satisfaction Guarantee - Limitations and Exceptions Apply*
+
+              Our goal is your total satisfaction.
+
+              If you’re not satisfied, neither are we. If for any reason you’re not completely satisfied with your
+              purchase, simply return it in its original condition within the return period and we’ll give you a full
+              refund of the purchase price, excluding shipping and handling charges. It’s that simple. You must have a
+              return authorization code, which you can obtain by calling 1-866-498-7882 or emailing
+              service@guitarcenter.com. Click Here (opens PDF file) to see detailed return handling charges. Your refund
+              will be promptly processed when we have confirmed that your returned item meets these requirements.</p>
+          </div>
+        </div>
+
+      </section>
+
+      <div class="container mb-5">
+        <h3>Find us here</h3>
+        <div class="row">
+
+          <div class="col-lg-12 mx-auto">
+
+            <div class="embed-responsive embed-responsive-16by9 ">
+              <iframe class="embed-responsive-item"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3266.361855526193!2d-90.02823798475848!3d35.04769118034682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87d57d31cebd7225%3A0xfd48f1ff0c23cb11!2sGraceland!5e0!3m2!1sen!2sus!4v1607320689427!5m2!1sen!2sus"
+                style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+              </iframe>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-      <div class="navbar-nav ml-auto">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-<span class="navbar-toggler-icon"></span></button>
 
-</div>
+      <footer class="social mt-3 py-5 text-center">
+        <span>
+          <p> Check us out on social!</p>
+        </span>
+        <i class="fab fa-facebook-square fa-2x facebook"></i>
+        <i class="fab fa-instagram-square fa-2x instagram"></i>
+        <i class="fab fa-twitter fa-2x twitter"></i>
+        <span>
+          <p>&copy; 2020 MusicGlee Inc.</p>
+        </span>
+      </footer>
 
-    </nav>
-  </header>
-        <main>
-           <section class="container mt-5 mb-2">
 
+      <!-- Optional JavaScript; choose one of the two! -->
 
-
-<h3>About MusicGlee</h3>
-
-  MusicGlee is a leading retailer of musical instruments, lessons, repairs and rentals in the U.S. With nearly 300 stores across the U.S. and one of the top direct sales websites in the industry, Guitar Center has helped people make music for more than 50 years. Guitar Center also provides customers with various musician-based services, including Guitar Center Lessons, where musicians of all ages and skill levels can learn to play a variety of instruments in many music genres; GC Repairs, an on-site maintenance and repairs service; and GC Rentals, a program offering easy rentals of instruments and other sound reinforcement gear. Additionally, Guitar Center’s sister brands include Music & Arts, which operates more than 200 stores specializing in band & orchestral instruments for sale and rental, serving teachers, band directors, college professors and students, and Musician’s Friend, a leading direct marketer of musical instruments in the United States. With an unrivaled in-store experience and passionate commitment to making gear easy-to-buy, Guitar Center is all about enabling musicians and non-musicians alike to experience the almost indescribable joy that comes from playing an instrument.</p>
-<h3>Orders</h3>
-<p> 
-  All orders, including, online orders, telephone orders and preorders for limited availability products are not binding upon Guitar Center until we accept them. Unless otherwise agreed by Guitar Center, payment must be processed by Guitar Center prior to an order being accepted. Guitar Center will communicate its acceptance of an order by acknowledging your order by reply email then processing your payment and shipping the item(s) ordered to you or by processing your payment in-store and providing the item(s) ordered to you. We reserve the right to refuse to provide products or services to anyone.
-  Pricing
-  
-  Because prices, product descriptions and availability can change quickly, Guitar Center does not warrant the accuracy or completeness of the information provided on the Site, in our stores or in written materials and is not responsible for pricing, typographical or other errors.
-  
-  If a product you purchase does not match the description on the Site, as your sole and exclusive remedy you may return the product, unused, to Guitar Center and receive a refund of your purchase price.
-  
-  Items in your shopping cart will reflect the most recent price displayed on each item's product detail page. Prices are frequently updated to adjust for different sales, limited pricing, and other discounting. Therefore, prices on the product detail page and in your cart may change after such updates to reflect the current prices. Placing items in your cart does not reserve the current prices shown at that time. Prices are reserved only by placing an order.
-         </p>  <h3>Returns</h3>
-      <p>45 Day Satisfaction Guarantee - Limitations and Exceptions Apply*
-
-        Our goal is your total satisfaction.
-        
-        If you’re not satisfied, neither are we. If for any reason you’re not completely satisfied with your purchase, simply return it in its original condition within the return period and we’ll give you a full refund of the purchase price, excluding shipping and handling charges. It’s that simple. You must have a return authorization code, which you can obtain by calling 1-866-498-7882 or emailing service@guitarcenter.com. Click Here (opens PDF file) to see detailed return handling charges. Your refund will be promptly processed when we have confirmed that your returned item meets these requirements.</p>  
-        </section>
-
-<div class="container mb-5">
-  <h3>Find us here</h3>
-<div class="row">
-  
-  <div class="col-lg-12 mx-auto">
-    
-              <div class="embed-responsive embed-responsive-16by9 ">
-                <iframe class="embed-responsive-item" 
-     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3266.361855526193!2d-90.02823798475848!3d35.04769118034682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87d57d31cebd7225%3A0xfd48f1ff0c23cb11!2sGraceland!5e0!3m2!1sen!2sus!4v1607320689427!5m2!1sen!2sus"  style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                </iframe>
-              </div>
-              </div>
-              </div>
-              </div>
-        
-              <footer class="social mt-3 py-5 text-center">
-          <span><p> Check us out on social!</p></span>
-          <i class="fab fa-facebook-square fa-2x facebook"></i>
-          <i class="fab fa-instagram-square fa-2x instagram"></i>
-          <i class="fab fa-twitter fa-2x twitter"></i>
-          <span><p>&copy; 2020 MusicGlee Inc.</p></span>
-        </footer>
-      
-
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
-    <script src="https://kit.fontawesome.com/1af4703ecf.js" crossorigin="anonymous"></script>
-    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+      <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+      </script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+      </script>
+      <script src="script.js"></script>
+      <script src="https://kit.fontawesome.com/1af4703ecf.js" crossorigin="anonymous"></script>
+      <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
     -->
   </body>
-</html>
+
+  </html>
